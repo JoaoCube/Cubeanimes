@@ -1,0 +1,141 @@
+@mixin title-cardH {
+  color: #cfd0d1;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cardsH-container h3 {
+  @include title-cardH();
+}
+@mixin before-title-cardH {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 4px;
+  background-color: var(--color-red);
+  align-self: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 20px;
+  transition: width 0.3s;
+}
+.cardsH-container h3::before {
+  @include before-title-cardH();
+}
+.cardsH-container:hover h3::before {
+  width: 30px;
+}
+/* ACIMA TUDO SOBRE TITULO ACIMA DOS ANIMES------------------------------ */
+
+.cardsH-bg {
+  background-color: none;
+}
+
+@mixin contA-cardH {
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+.cardsH-container {
+  @include contA-cardH();
+}
+/* CONTAINER DOS CARDS NA HORIZONTAL */
+.cardsH-conteudo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardsH-conteudo ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONFIGURA COMO UM TODO CARD HORIZONTAL*/
+@mixin cardH-medidas {
+  width: 300px;
+  height: 170px;
+  border-radius: 10px;
+  border: 2px solid rgba(83, 83, 83, 0.178);
+}
+.cardsH-conteudo ul li {
+  @include cardH-medidas();
+}
+
+.cardsH-conteudo ul li img {
+  border-radius: 8px;
+  mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27, 1) 80%);
+}
+.cardsH-conteudo ul li div {
+  position: relative;
+}
+// TEXTO TITULO DO CARDH
+@mixin titleA-cardH {
+  position: absolute;
+  color: #f9f9fc;
+  top: 145px;
+  font-size: 0.975rem;
+  left: 10px;
+  z-index: 10;
+  font-family: "Roboto", Arial, sans-serif;
+  max-width: 28ch;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.cardsH-conteudo ul li div .title-cardH {
+  @include titleA-cardH();
+}
+
+/*ANIMACAO CARD*/
+.cardsH-conteudo ul li:hover {
+  border: 2px solid #ffffff;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+/*ANIMACAO NA IMAGEM DO CARD, ESCURECE MAIS A IMAGEM COM GRADIENT*/
+.cardsH-conteudo ul li img:hover {
+  transition: 0.5s;
+  mask-image: linear-gradient(to top, transparent 20%, rgb(27, 27, 27) 130%);
+}
+
+@media (max-width: 800px) {
+  .cardsH-bg {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .cardsH-conteudo {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 20px;
+  }
+
+  .cardsH-conteudo ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    overflow-x: scroll;
+    margin-left: 20px;
+  }
+  .cardsH-conteudo ul li:hover {
+    display: none;
+  }
+
+  .cardsH-conteudo ul li {
+    width: 300px;
+    height: 175px;
+    border-radius: 10px;
+    border: 2px solid rgba(83, 83, 83, 0.178);
+  }
+  .cardsH-conteudo ul li img {
+    border-radius: 8px;
+    mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27, 1) 70%);
+  }
+}

@@ -1,0 +1,45 @@
+.header-bg {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 30;
+}
+
+.header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  width: 60px;
+}
+
+/* NAVIGATION GERAL */
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ICONES DA DIREITA DO HEADER */
+.header-menu i {
+  filter: invert(100);
+  width: 100%;
+  cursor: pointer;
+}
+
+/* RESPONSIVIDADE MOBILE*/
+@media (max-width: 800px) {
+  .header-bg {
+    width: 100%;
+  }
+  .header {
+    padding: 5px 20px;
+  }
+  .header-menu {
+    gap: 25px;
+  }
+}/*# sourceMappingURL=header.css.map */

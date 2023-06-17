@@ -1,0 +1,112 @@
+/*CONFIGURA TUDO SOBRE O POPUP*/
+.popup {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  opacity: 0; /*COMECA SEM OPACIDADE E DEPOIS DE 
+X SEGUNDOS O POP UP APARECE AUTOMATICO*/
+}
+
+/*CONFIGURA TUDO SOBRE O CONTEUDO DO CARD DO POPUP*/
+.contentBox {
+  position: relative;
+  width: 590px;
+  height: 350px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0 5px 15px #2c2c2c;
+  scale: 80%;
+}
+
+/*CONFIGURADOR DA IMAGEM NO POPUP*/
+.contentBox.imgBx {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*CONFIGURA IMAGEM NO POPUP*/
+.contentBox .imgBx img {
+  position: relative;
+  /*margin-left: 10px;*/
+  width: 100%;
+  scale: 90%;
+  margin-top: 25px;
+  z-index: 10;
+}
+
+/*CONFIGURA TUDO DO CONTEUDO NO POPUP*/
+.contentBox .content-pop {
+  position: relative;
+  width: 260px;
+  height: 330px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox .content-pop .pop-h3 {
+  color: #1c1c1c;
+  line-height: 1em;
+  font-size: 1.8em;
+}
+
+.contentBox .content-pop .pop-h2 {
+  font-size: 1em;
+  color: #f2000d;
+  line-height: 1em;
+}
+
+.contentBox .content-pop .pop-p {
+  font-weight: 300;
+  color: #1c1c1c;
+}
+
+/*BOTAO DE NOTIFICACAO DENTRO DO POP UP*/
+.contentBox .content-pop .pop-btn {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  padding: 10px 10px;
+  background-color: #eb2647;
+  color: #ffffff;
+  margin-top: 15px;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*FECHAR POPUP*/
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #dadada url(../publics/imgs/close.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 11;
+}
+
+@media (max-width: 500px) {
+  .popup {
+    scale: 0.8;
+    top: 40%;
+    left: 38%;
+  }
+}/*# sourceMappingURL=popup.css.map */

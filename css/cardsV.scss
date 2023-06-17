@@ -1,0 +1,148 @@
+/* CONFIGURA TITULO ACIMA DAS LISTAS DE ANIMES */
+@mixin cardsV-title {
+  color: #cfd0d1;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cardsV-container h3 {
+  @include cardsV-title();
+}
+@mixin cardsV-before-title {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 4px;
+  background-color: var(--color-purple);
+  align-self: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 20px;
+  transition: width 0.3s;
+}
+.cardsV-container h3::before {
+  @include cardsV-before-title();
+}
+.cardsV-container:hover h3::before {
+  width: 30px;
+}
+.cardsV-bg {
+  background: transparent;
+}
+
+@mixin cardsV-contA {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cardsV-container {
+  @include cardsV-contA();
+}
+@mixin cardsV-cont {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+}
+.cardsV-conteudo {
+  @include cardsV-cont();
+}
+
+.cardsV-conteudo ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONFIGURA COMO UM TODO CARD HORIZONTAL*/
+@mixin cardV-def {
+  width: 230px;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid rgba(83, 83, 83, 0.178);
+}
+.cardsV-conteudo ul li {
+  @include cardV-def();
+}
+
+@mixin img-cardV {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27, 1) 80%);
+}
+.cardsV-conteudo ul li img {
+  @include img-cardV();
+}
+
+.cardsV-conteudo ul li div {
+  position: relative;
+  color: #f9f9fc;
+}
+
+@mixin cardV-titleA {
+  position: absolute;
+  top: 88%;
+  left: 10px;
+  font-family: "Roboto", Arial, sans-serif;
+  max-width: 22ch;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #f9f9fc;
+  font-size: 0.975rem;
+}
+.cardsV-conteudo ul li div > p {
+  @include cardV-titleA();
+}
+
+/*ANIMACAO CARD*/
+.cardsV-conteudo ul li:hover {
+  border: 2px solid #ffffff;
+  transition: 0.3s linear;
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+/*ANIMACAO NA IMAGEM DO CARD, ESCURECE MAIS A IMAGEM COM GRADIENT*/
+.cardsV-conteudo ul li img:hover {
+  transition: 0.5s;
+  mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
+}
+
+@media (max-width: 800px) {
+  .cardsV-bg {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .cardsH-conteudo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px 20px;
+  }
+
+  .cardsV-conteudo ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin-left: 20px;
+    overflow-x: scroll;
+  }
+  .cardsV-conteudo ul li:hover {
+    display: none;
+  }
+
+  .cardsV-conteudo ul li {
+    width: 230px;
+    height: 310px;
+    border-radius: 10px;
+    border: 2px solid rgba(83, 83, 83, 0.178);
+  }
+}
