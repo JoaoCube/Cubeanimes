@@ -423,17 +423,15 @@ input[type="radio"] {
 /*---------------------------------------------------*/
 /*TUDO SOBRE O CUBE PASS E PAGINA*/
 .contCubePass {
-  margin: 0 auto;
+  margin-bottom: 100px;
 }
 .contCubePass p {
-  font-family: Lato, Helvetica, sans-serif;
   text-align: center;
-  margin-top: 25px;
 }
 .cards-planos {
   margin-top: 25px;
   display: flex;
-  padding: 0 40px;
+  padding: 10px 40px;
   justify-content: space-evenly;
 }
 .cardPay {
