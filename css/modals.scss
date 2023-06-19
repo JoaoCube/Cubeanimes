@@ -11,8 +11,8 @@
 .modal {
   width: 200px;
   padding: 10px;
-  background-color: #111111;
-  border-radius: 4px;
+  background-color: rgba($color: #0e0e0e, $alpha: 0.6);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .modal ul {
@@ -36,6 +36,8 @@
 // BOTAO E LI DO FECHAR
 .fechar {
   border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
   border: none;
   color: #fff;
   cursor: pointer;

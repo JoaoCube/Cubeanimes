@@ -280,6 +280,7 @@ input[type="radio"] {
 /*CONTAINER DE CARDS DO SOBRE*/
 .cont-cardSobre {
   display: flex;
+  margin-bottom: 100px;
 }
 .cardSobre {
   margin: 0 auto;
