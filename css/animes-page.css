@@ -1,7 +1,7 @@
 /*TODAS AS INFORMACOES ABAIXO DAS SEASONS*/
 .infoAnime-bg {
   width: 100%;
-  height: 700px;
+  height: 680px;
 }
 
 .infoAnime-container {
@@ -64,7 +64,7 @@
 }
 
 .seasons-bg {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 100px;
   margin-left: 80px;
 }
@@ -76,35 +76,40 @@
 /*TUDO SOBRE SEASONS*/
 .seasons {
   display: grid;
-  grid-template-columns: repeat(5, 320px);
+  grid-template-columns: repeat(5, 300px);
   gap: 20px;
 }
 
 /*CARDS SOBRE AS TEMPORADAS*/
 .season {
   flex-wrap: wrap;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.season h4 {
+  position: relative;
+  color: var(--color-cinza);
+}
+
+.season p {
+  position: relative;
+  color: var(--color-cinza);
 }
 
 .season img {
   width: 100%;
-  height: 100%;
+  border: 1px solid #fff;
   overflow: hidden;
   border-radius: 5px;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 /*ANIMACAO AO PASSAR O MOUSE*/
 .season img:hover {
   transition: 0.3s;
   opacity: 1;
-}
-
-.season:hover {
-  border: 1px solid var(--color-purple);
-  transition: 0.2s ease;
+  border: 1px solid #5c0eec;
 }
 
 @media (max-width: 800px) {
@@ -120,7 +125,7 @@
             mask-image: linear-gradient(to top, transparent 15%, rgb(14, 14, 14) 100%);
   }
   .bannerCapa img {
-    height: 600px;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -149,7 +154,7 @@
     display: none;
   }
   .seasons-bg {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 100px;
     margin-left: 0px;
   }
@@ -170,6 +175,7 @@
   }
   .season img {
     width: 100%;
+    height: 200px;
     overflow: hidden;
     border-radius: 5px;
     opacity: 1;
