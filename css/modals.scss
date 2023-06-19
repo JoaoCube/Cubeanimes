@@ -1,8 +1,8 @@
 .modal-hamburger {
   position: fixed;
-  top: 8%;
-  left: 88.5%;
-  z-index: 30;
+  top: 10%;
+  right: 30px;
+  z-index: 33;
   align-items: center;
   justify-content: center;
   display: none;
@@ -10,9 +10,25 @@
 
 .modal {
   width: 200px;
-  padding: 10px;
-  background-color: rgba($color: #0e0e0e, $alpha: 0.6);
-  border-radius: 0px 0px 4px 4px;
+  padding: 20px;
+  background-color: #1b1d24;
+  border-radius: 6px;
+  transition: 0.2s linear;
+}
+.balao2:after {
+  /*Triangulo*/
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+  /*Aqui entra a cor da "aba" do balão */
+  border-bottom: 20px solid #1b1d24;
+  top: -18px; /*localização. Experimente alterar para 'bottom'*/
+  right: 5px;
+  z-index: 30;
 }
 
 .modal ul {
@@ -23,14 +39,20 @@
   margin: 10px;
   padding: 10px;
   color: #fff;
-  border-bottom: 1px solid #f2000d;
+  transition: 0.2s ease-in-out;
 }
 .modal ul .item:hover {
-  border-bottom: 1px solid #fff;
-  width: 130px;
+  padding: 10px 20px;
+  background-color: #17181f;
+  border-radius: 4px;
 }
+// ICONES NO MODAL
 .modal ul li i {
-  margin-right: 5px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.fechar .bg-not {
+  background-color: transparent;
 }
 
 // BOTAO E LI DO FECHAR
@@ -42,6 +64,9 @@
   color: #fff;
   cursor: pointer;
   background-color: #f2000d;
+}
+.fechar .modal-icon {
+  display: flex;
 }
 
 @keyframes animate-modal {
