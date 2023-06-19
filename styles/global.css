@@ -126,7 +126,7 @@ body::-webkit-scrollbar-track {
   background-color: #ff4c2c;
 }
 
-.modal-container {
+.modal-hamburger {
   position: fixed;
   top: 8%;
   left: 88.5%;
@@ -176,7 +176,7 @@ body::-webkit-scrollbar-track {
   }
 }
 
-.modal-container.mostrar {
+.modal-hamburger.mostrar {
   display: flex;
 }
 

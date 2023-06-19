@@ -71,13 +71,13 @@ window.onscroll = () => {
 
 // ABRIR MODAL DO HAMBURGER
 function openModal() {
-  const modal = document.getElementById("modal-container");
+  const modal = document.getElementById("modal-hamburger");
   modal.classList.add("mostrar");
 
   modal.addEventListener("click", (e) => {
-    if (e.target.id == "modal-container" || e.target.id == "fechar") {
+    if (e.target.id == "modal-hamburger" || e.target.id == "fechar") {
       modal.classList.remove("mostrar");
-      localStorage.fechaModal = "modal-container";
+      localStorage.fechaModal = "modal-hamburger";
     }
   });
 }

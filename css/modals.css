@@ -1,0 +1,62 @@
+.modal-hamburger {
+  position: fixed;
+  top: 8%;
+  left: 88.5%;
+  z-index: 30;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal {
+  width: 200px;
+  padding: 10px;
+  background-color: #111111;
+  border-radius: 4px;
+}
+
+.modal ul {
+  background-color: transparent;
+}
+
+.modal ul .item {
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  border-bottom: 1px solid #f2000d;
+}
+
+.modal ul .item:hover {
+  border-bottom: 1px solid #fff;
+  width: 130px;
+}
+
+.modal ul li i {
+  margin-right: 5px;
+}
+
+.fechar {
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #f2000d;
+}
+
+@keyframes animate-modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.modal-hamburger.mostrar {
+  display: flex;
+}
+
+.mostrar .modal {
+  animation: animate-modal 0.3s;
+}/*# sourceMappingURL=modals.css.map */
