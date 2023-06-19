@@ -105,3 +105,81 @@ body::-webkit-scrollbar-track {
   margin-right: auto;
   max-width: 1600px;
 }
+
+.btn {
+  padding: 25px 60px;
+  display: inline;
+  background-color: tomato;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.btn:hover {
+  background-color: #ff4c2c;
+}
+
+.modal-container {
+  position: fixed;
+  top: 8%;
+  left: 88.5%;
+  z-index: 30;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal {
+  width: 200px;
+  padding: 10px;
+  background-color: #111111;
+}
+
+.modal ul {
+  background-color: transparent;
+}
+
+.modal ul li {
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  border-bottom: 1px solid #f2000d;
+}
+.modal ul li i {
+  margin-right: 5px;
+}
+
+.fechar {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #f2000d;
+  border: none;
+}
+
+@keyframes animate-modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.modal-container.mostrar {
+  display: flex;
+}
+
+.mostrar .modal {
+  animation: animate-modal 0.3s;
+}

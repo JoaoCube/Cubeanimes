@@ -38,6 +38,32 @@
         </div> <!--FIM CONTENT BOX-->
     </div> <!--FIM POP UP-->
 
+    <div id="modal-container" class="modal-container">
+        <div class="modal">
+            <ul>
+                <li class="fechar" id="fechar">
+                    <i class="fa-solid fa-rectangle-xmark fa-xl" style="color: #f9f9fc;"></i>
+                    Fechar
+                </li>
+                <li> <a href="./sobre.html">
+                        <i class="fa-sharp fa-solid fa-list fa-xl" style="color: #f9f9fc;">
+                        </i>
+                        Sobre
+                    </a>
+                </li>
+
+                <li> <a href=""><i class="fa-solid fa-book fa-xl" style="color: #f9f9fc;"></i>
+                        Animes
+                    </a></li>
+
+                <li> <a href="./Cubepass.html"><i class="fa-solid fa-ticket fa-xl" style="color: #f9f9fc;"></i>
+                        Cube Pass
+                    </a></li>
+            </ul>
+
+        </div>
+    </div>
+
     <header class="header-bg">
         <div class="header">
             <a href="./index.html">
@@ -51,12 +77,11 @@
 
                     <li><i class="fa-solid fa-user fa-xl" style="color: #0e0e0e;"></i></li>
 
-                    <li><i class="fa-sharp fa-solid fa-bars fa-2xl" onclick="showModal()" style="color: #0e0e0e;"></i>
+                    <li onclick="openModal()" class="btn-hamburger"><i class="fa-sharp fa-solid fa-bars fa-2xl" style="color: #0e0e0e;"></i>
                     </li>
 
                 </ul>
             </nav> <!-- FIM NAVBAR CONTAINER -->
-
         </div> <!-- FIM HEADER -->
     </header> <!-- FIM HEADER BG -->
     <!----------------------------------------------------------------------->

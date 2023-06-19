@@ -34,18 +34,6 @@ close.addEventListener("click", () => {
 });
 
 ///////////////////////////////////////////////////////////
-// ABRIR E FECHAR O HAMBURGER
-function showModal() {
-  var element = document.getElementById("modal");
-  element.classList.add("show-modal");
-}
-
-function closeModal() {
-  var element = document.getElementById("modal");
-  element.classList.remove("show-modal");
-}
-
-///////////////////////////////////////////////////////////
 // PERGUNTA SE QUER NOTIFICACAO DO SITE
 function notifyMe() {
   // Verifica se o browser suporta notificações
@@ -80,3 +68,16 @@ window.onscroll = () => {
     ? nav.classList.add("sticky")
     : nav.classList.remove("sticky");
 };
+
+// ABRIR MODAL DO HAMBURGER
+function openModal() {
+  const modal = document.getElementById("modal-container");
+  modal.classList.add("mostrar");
+
+  modal.addEventListener("click", (e) => {
+    if (e.target.id == "modal-container" || e.target.id == "fechar") {
+      modal.classList.remove("mostrar");
+      localStorage.fechaModal = "modal-container";
+    }
+  });
+}
