@@ -1,8 +1,9 @@
 .header-bg {
   width: 100%;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 30;
+  transition: 0.3s ease-in-out;
 }
 
 .header {
@@ -27,7 +28,7 @@
 }
 
 header.sticky {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
   transition: 0.3s ease-in-out;
 }
 
