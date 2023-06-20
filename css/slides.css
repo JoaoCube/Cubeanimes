@@ -107,9 +107,9 @@
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(70%);
-  -webkit-mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 100%);
-          mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 100%);
+  filter: brightness(80%);
+  -webkit-mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 80%);
+          mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 80%);
 }
 
 @media (max-width: 800px) {
