@@ -127,12 +127,16 @@
   .perguntas {
     margin: 10px 40px;
   }
-  .cont-cardSobre {
-    overflow-x: scroll;
+  .perguntas h4 {
+    background-color: #1b1b1b;
   }
-  .cardSobre {
-    margin: 10px;
-    text-align: center;
+  .perguntas p {
+    margin-bottom: 30px;
+  }
+  .cont-cardSobre {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
   }
   .cardSobre-title {
     color: #fff;
