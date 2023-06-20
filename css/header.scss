@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s ease-in-out;
 }
 .header .logo {
   width: 60px;
@@ -26,6 +27,12 @@
   align-items: center;
   gap: 20px;
 }
+
+header.sticky {
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.3s ease-in-out;
+}
+
 /* ICONES DA DIREITA DO HEADER */
 @mixin img-header-def {
   filter: invert(100);

@@ -64,7 +64,7 @@ function notifyMe() {
 //BACKGROUND NO NAV AO ROLAR O SCROLL DO MOUSE PRA BAIXO
 var nav = document.querySelector("header");
 window.onscroll = () => {
-  this.scrollY > 10
+  this.scrollY > 18
     ? nav.classList.add("sticky")
     : nav.classList.remove("sticky");
 };
