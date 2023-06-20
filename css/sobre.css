@@ -1,0 +1,121 @@
+/*TUDO SOBRE A PAGINA SOBRE*/
+/*CONTAINER DE CARDS DO SOBRE*/
+.cont-cardSobre {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.cardSobre {
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 30px;
+  border: 1px ridge #222222;
+  border-radius: 5px;
+  width: 250px;
+  height: 200px;
+  /*background: #0e0c0c;*/
+  padding: 2rem 1.5rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.cardSobre-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/*CONFIGURA CONTAINER DO SOBRE*/
+.containerSobre {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.containerSobre .divSobre {
+  padding-top: 100px;
+}
+
+/*CONFIGURA BANNER DO SOBRE*/
+.containerSobre .divSobre img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.perguntas {
+  margin-top: 20px;
+}
+
+/* TITULOS DAS PERGUNTAS*/
+.perguntas h4 {
+  color: #f9f9fc;
+  background-color: #f2000d;
+  text-align: left;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+/*RESPOSTAS DAS PERGUNTAS*/
+.perguntas > p {
+  color: #cfd0d1;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+/* IMAGEM */
+.cardSobre-avatar {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.cardSobre-avatar img {
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+/*CARD FOOTER*/
+.cardSobre-social {
+  transform: translateY(200%);
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cardSobre-social__item i {
+  display: block;
+  height: 18px;
+  width: 18px;
+  transition: 0.2s linear;
+}
+
+.cardSobre-social__item i:hover {
+  transform: scale(1.2);
+}
+
+/* TEXTO - TITLE*/
+.cardSobre-title {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.cardSobre-subtitle {
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+/* ANIMACAO AO MOUSE */
+.cardSobre:hover {
+  border: 1px ridge #f2000d;
+  transition: 1s;
+}/*# sourceMappingURL=sobre.css.map */
