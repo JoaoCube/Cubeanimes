@@ -107,3 +107,28 @@
   border: 1px ridge #f2000d;
   transition: 1s;
 }
+
+@media (max-width: 800px) {
+  .divSobre {
+    margin: 0px 40px;
+  }
+
+  .perguntas {
+    margin: 10px 40px;
+  }
+
+  .cardSobre {
+    margin: 10px;
+    text-align: center;
+  }
+  .cardSobre-title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+  .cardSobre-subtitle {
+    color: #ffffff;
+    font-size: 0.7rem;
+  }
+}
