@@ -27,7 +27,7 @@
 /*CONFIGURA CONTAINER TITULO/TEXTO NO SLIDE*/
 .info-slide {
   padding-top: 110px;
-  padding-left: 80px;
+  padding-left: 170px;
   color: #fff;
   max-width: 500px;
   position: absolute;
@@ -35,35 +35,26 @@
 }
 
 /*TITULO DO ANIME NO SLIDE*/
-.info-slide .title-slide {
-  width: 700px;
-  font-size: 4.5rem;
-  color: #fff;
-  font-family: "Poppins";
-  text-transform: uppercase;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
-  -webkit-box-orient: vertical;
+.info-slide > img {
+  width: 460px;
 }
 
 /*CONFIGURA TAMANHO DOS TEXTOS DO SLIDE - SINOPSE*/
 .info-slide div > .sinopse {
-  padding-top: 20px;
+  margin-top: 20px;
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #fff;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 6; /* NUMERO MAX DE LINHAS */
+  -webkit-line-clamp: 5; /* NUMERO MAX DE LINHAS */
   -webkit-box-orient: vertical;
 }
 
 /*GENEROS DOS ANIMES*/
 .categorias {
-  padding-top: 30px;
+  margin-top: 20px;
 }
 
 /*GENEROS DOS ANIMES*/
@@ -71,8 +62,8 @@
   border: 1px ridge #ffffff;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  padding: 10px;
-  font-size: 1rem;
+  padding: 8px;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 
