@@ -127,7 +127,7 @@
             mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 60%);
   }
   .imagem-slide img {
-    filter: brightness(50%);
+    filter: brightness(60%);
     height: 600px;
   }
   /*TITULO DO ANIME NO SLIDE*/
@@ -163,7 +163,7 @@
             mask-image: linear-gradient(to top, transparent 10%, rgb(27, 27, 27) 80%);
   }
   .imagem-slide img {
-    filter: brightness(50%);
+    filter: brightness(60%);
     height: 540px;
   }
   /*TITULO DO ANIME NO SLIDE*/
@@ -190,7 +190,7 @@
             mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 80%);
   }
   .imagem-slide img {
-    filter: brightness(50%);
+    filter: brightness(70%);
     height: 500px;
   }
   /*TITULO DO ANIME NO SLIDE*/
