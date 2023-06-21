@@ -1,12 +1,12 @@
 /*CONFIGURA TUDO SOBRE O POPUP*/
 @mixin popup-geral {
+  background: rgba($color: #0e0e0e, $alpha: 0.6);
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 30;
   display: none;
   opacity: 0; /*COMECA SEM OPACIDADE E DEPOIS DE 
   X SEGUNDOS O POP UP APARECE AUTOMATICO*/
@@ -16,39 +16,23 @@
 }
 /*CONFIGURA TUDO SOBRE O CONTEUDO DO CARD DO POPUP*/
 .contentBox {
+  top: 85%;
+  left: 25%;
+  transform: translate(50%, -50%);
   position: relative;
-  width: 590px;
-  height: 350px;
-  background: #fff;
+  width: 500px;
+  height: 180px;
+  background: #f9f9fc;
   border-radius: 10px;
   display: flex;
   box-shadow: 0 5px 15px #2c2c2c;
-  scale: 80%;
 }
-/*CONFIGURADOR DA IMAGEM NO POPUP*/
-.contentBox.imgBx {
-  position: relative;
-  width: 250px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/*CONFIGURA IMAGEM NO POPUP*/
-.contentBox .imgBx img {
-  position: relative;
-  /*margin-left: 10px;*/
-  width: 100%;
-  scale: 90%;
-  margin-top: 25px;
-  z-index: 10;
-}
+
 /*CONFIGURA TUDO DO CONTEUDO NO POPUP*/
 @mixin popup-content {
   position: relative;
-  width: 260px;
-  height: 330px;
-  margin-right: 40px;
+  padding: 20px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,24 +43,24 @@
 .contentBox .content-pop .pop-h3 {
   color: #1c1c1c;
   line-height: 1em;
-  font-size: 1.8em;
+  font-size: 1.8rem;
+  margin-bottom: 6px;
 }
 .contentBox .content-pop .pop-h2 {
   font-size: 1em;
   color: #f2000d;
-  line-height: 1em;
+  line-height: 1rem;
 }
 .contentBox .content-pop .pop-p {
-  font-weight: 300;
   color: #1c1c1c;
 }
 /*BOTAO DE NOTIFICACAO DENTRO DO POP UP*/
 @mixin btn-popup {
-  width: 200px;
+  width: 180px;
   height: 40px;
   font-size: 18px;
-  padding: 10px 10px;
-  background-color: #eb2647;
+  padding: 10px;
+  background-color: #f2000d;
   color: #ffffff;
   margin-top: 15px;
   border: none;
@@ -90,11 +74,11 @@
 /*FECHAR POPUP*/
 @mixin close-popup {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: -10px;
+  right: -10px;
   width: 40px;
   height: 40px;
-  background: #dadada url(../publics/imgs/close.png);
+  background: #dfdfdf url(../publics/imgs/close.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
@@ -106,10 +90,61 @@
   @include close-popup();
 }
 
-@media (max-width: 500px) {
-  .popup {
+@media (max-width: 800px) {
+  popup-geral {
+    background: rgba($color: #0e0e0e, $alpha: 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    display: none;
+    opacity: 0; /*COMECA SEM OPACIDADE E DEPOIS DE 
+    X SEGUNDOS O POP UP APARECE AUTOMATICO*/
+  }
+
+  .contentBox {
+    top: 85%;
+    left: -36%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 500px;
+    height: 180px;
+    background: #f9f9fc;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 5px 15px #2c2c2c;
+  }
+}
+
+@media (max-width: 600px) {
+  popup-geral {
+    background: rgba($color: #0e0e0e, $alpha: 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    display: none;
+    opacity: 0; /*COMECA SEM OPACIDADE E DEPOIS DE 
+    X SEGUNDOS O POP UP APARECE AUTOMATICO*/
+  }
+
+  .contentBox {
+    top: 85%;
+    left: -25%;
     scale: 0.8;
-    top: 40%;
-    left: 38%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 400px;
+    height: 180px;
+    background: #f9f9fc;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 5px 15px #2c2c2c;
   }
 }
