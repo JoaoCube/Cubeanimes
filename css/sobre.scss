@@ -42,23 +42,21 @@
   object-position: top;
 }
 
-.perguntas {
+section details summary {
   margin-top: 20px;
-}
-/* TITULOS DAS PERGUNTAS*/
-.perguntas h4 {
-  color: #f9f9fc;
   background-color: #f2000d;
-  text-align: left;
-  border-radius: 5px;
-  padding: 4px;
+  padding: 2%;
+  color: #ffffff;
+  border-bottom: 2px solid #f9f9fc;
 }
-/*RESPOSTAS DAS PERGUNTAS*/
-.perguntas > p {
-  color: #cfd0d1;
-  line-height: 25px;
-  margin-bottom: 20px;
+
+section details p {
+  background-color: #282828;
+  color: #f9f9fc;
+  padding: 2%;
+  transition: all 0.5s;
 }
+
 /* IMAGEM */
 .cardSobre-avatar {
   width: var(--size);
@@ -104,7 +102,7 @@
 }
 /* ANIMACAO AO MOUSE */
 .cardSobre:hover {
-  border: 1px ridge #f2000d;
+  border: 1px solid #f2000d;
   transition: 1s;
 }
 
@@ -113,15 +111,16 @@
     margin: 0px 40px;
   }
 
-  .perguntas {
-    margin: 10px 40px;
-  }
-  .perguntas h4 {
-    background-color: #1b1b1b;
+  section details summary {
+    margin: 20px 30px;
+    background-color: #f2000d;
+    padding: 2%;
+    color: #ffffff;
+    border-bottom: 2px solid #f9f9fc;
   }
 
-  .perguntas p {
-    margin-bottom: 30px;
+  section details p {
+    margin: 0px 30px;
   }
 
   .cont-cardSobre {
