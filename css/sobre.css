@@ -118,10 +118,18 @@ section details p {
 
 @media (max-width: 800px) {
   .divSobre {
-    margin: 0px 40px;
+    margin: 0px 30px;
   }
   .cont-cardSobre {
     margin-top: 20px;
+  }
+  .containerSobre .divSobre img {
+    width: 100%;
+    height: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
   }
   section details summary {
     margin: 20px 30px;
