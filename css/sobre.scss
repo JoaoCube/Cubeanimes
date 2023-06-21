@@ -2,6 +2,7 @@
 /*CONTAINER DE CARDS DO SOBRE*/
 .cont-cardSobre {
   display: flex;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 .cardSobre {
@@ -44,7 +45,7 @@
 
 section details summary {
   margin-top: 20px;
-  background-color: #f2000d;
+  background-color: rgba($color: #f2000d, $alpha: 0.5);
   padding: 2%;
   color: #ffffff;
   border-bottom: 2px solid #f9f9fc;
@@ -109,6 +110,10 @@ section details p {
 @media (max-width: 800px) {
   .divSobre {
     margin: 0px 40px;
+  }
+
+  .cont-cardSobre {
+    margin-top: 20px;
   }
 
   section details summary {
