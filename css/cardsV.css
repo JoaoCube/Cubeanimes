@@ -120,9 +120,6 @@
     margin-left: 20px;
     overflow-x: scroll;
   }
-  .cardsV-conteudo ul li:hover {
-    display: none;
-  }
   .cardsV-conteudo ul li {
     width: 230px;
     height: 310px;

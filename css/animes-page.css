@@ -179,13 +179,6 @@
     border-radius: 5px;
     opacity: 1;
   }
-  /*ANIMACAO AO PASSAR O MOUSE*/
-  .season img:hover {
-    display: none;
-  }
-  .season:hover {
-    display: none;
-  }
 }
 @media (max-width: 600px) {
   .infoAnime-conteudo .descricao-anime {
@@ -217,12 +210,5 @@
     overflow: hidden;
     border-radius: 5px;
     opacity: 1;
-  }
-  /*ANIMACAO AO PASSAR O MOUSE*/
-  .season img:hover {
-    display: none;
-  }
-  .season:hover {
-    display: none;
   }
 }/*# sourceMappingURL=animes-page.css.map */
