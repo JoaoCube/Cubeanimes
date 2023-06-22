@@ -118,9 +118,8 @@
     height: 600px;
   }
 
-  /*TITULO DO ANIME NO SLIDE*/
-  .info-slide .title-slide {
-    font-size: 3.7rem;
+  .info-slide > img {
+    width: 380px;
   }
   /*CONFIGURA TAMANHO DOS TEXTOS DO SLIDE - SINOPSE*/
   .info-slide div > .sinopse {
@@ -144,8 +143,11 @@
   }
   /*CONFIGURA CONTAINER TITULO/TEXTO NO SLIDE*/
   .info-slide {
-    padding-top: 380px;
+    padding-top: 280px;
     padding-left: 20px;
+  }
+  .info-slide > img {
+    width: 300px;
   }
 
   .imagem-slide {
@@ -160,10 +162,6 @@
     height: 540px;
   }
 
-  /*TITULO DO ANIME NO SLIDE*/
-  .info-slide .title-slide {
-    font-size: 3.2rem;
-  }
   /*CONFIGURA TAMANHO DOS TEXTOS DO SLIDE - SINOPSE*/
   .info-slide div > .sinopse {
     display: none;
@@ -178,8 +176,11 @@
 
   /*CONFIGURA CONTAINER TITULO/TEXTO NO SLIDE*/
   .info-slide {
-    margin-top: 320px;
+    margin-top: 270px;
     padding-top: 0px;
+  }
+  .info-slide > img {
+    width: 270px;
   }
 
   .imagem-slide {
