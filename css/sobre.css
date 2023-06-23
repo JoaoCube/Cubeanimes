@@ -47,12 +47,16 @@
      object-position: top;
 }
 
+section details {
+  margin-bottom: 30px;
+}
+
 section details summary {
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: rgba(242, 0, 13, 0.5);
   padding: 2%;
   color: #ffffff;
-  border-bottom: 2px solid #f9f9fc;
+  border-bottom: 1px solid #f9f9fc;
 }
 
 section details p {
@@ -131,11 +135,13 @@ section details p {
     -o-object-position: top;
        object-position: top;
   }
+  section details {
+    margin-bottom: -20px;
+  }
   section details summary {
     margin: 20px 30px;
     background-color: #f2000d;
     color: #ffffff;
-    border-bottom: 1px solid #f9f9fc;
   }
   section details p {
     margin: 0px 30px;
