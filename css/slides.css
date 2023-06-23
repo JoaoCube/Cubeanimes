@@ -122,7 +122,7 @@
     height: 600px;
   }
   .info-slide > img {
-    width: 380px;
+    width: 320px;
   }
   /*CONFIGURA TAMANHO DOS TEXTOS DO SLIDE - SINOPSE*/
   .info-slide div > .sinopse {
@@ -149,7 +149,7 @@
     padding-left: 20px;
   }
   .info-slide > img {
-    width: 300px;
+    width: 260px;
   }
   .imagem-slide {
     -webkit-mask-image: linear-gradient(to top, transparent 10%, rgb(27, 27, 27) 80%);
@@ -175,7 +175,7 @@
     padding-top: 0px;
   }
   .info-slide > img {
-    width: 270px;
+    width: 220px;
   }
   .imagem-slide {
     -webkit-mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 80%);
