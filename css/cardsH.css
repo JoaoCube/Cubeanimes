@@ -6,7 +6,7 @@
 
 .title-area {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .title-area a {
@@ -104,7 +104,7 @@
 .cardsH-conteudo ul li:hover {
   border: 2px solid #ffffff;
   transition: 0.3s ease-in-out;
-  transform: scale(1.05);
+  transform: scale(1.076);
   border-radius: 10px;
 }
 

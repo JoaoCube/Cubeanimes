@@ -1,7 +1,6 @@
 /* CONFIGURA TITULO ACIMA DAS LISTAS DE ANIMES */
 .cardsV-container h3 {
   color: #cfd0d1;
-  margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: center;
@@ -92,7 +91,7 @@
 .cardsV-conteudo ul li:hover {
   border: 2px solid #ffffff;
   transition: 0.3s linear;
-  transform: scale(1.05);
+  transform: scale(1.076);
   border-radius: 10px;
 }
 
