@@ -1,11 +1,30 @@
-.cardsH-container h3 {
+.title-area h3 {
   color: #cfd0d1;
   max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
   margin-bottom: 10px;
+}
+
+.title-area {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.title-area a {
+  margin-left: auto;
+  padding: 5px;
+  height: 20px;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #f9f9fc;
+}
+
+.title-area a:hover {
+  border: 1px solid #cfd0d1;
+  opacity: 1;
+  background-color: #272727;
 }
 
 .cardsH-container h3::before {
@@ -85,7 +104,7 @@
 .cardsH-conteudo ul li:hover {
   border: 2px solid #ffffff;
   transition: 0.3s ease-in-out;
-  transform: scale(1.1);
+  transform: scale(1.05);
   border-radius: 10px;
 }
 

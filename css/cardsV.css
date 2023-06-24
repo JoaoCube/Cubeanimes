@@ -92,7 +92,7 @@
 .cardsV-conteudo ul li:hover {
   border: 2px solid #ffffff;
   transition: 0.3s linear;
-  transform: scale(1.1);
+  transform: scale(1.05);
   border-radius: 10px;
 }
 
