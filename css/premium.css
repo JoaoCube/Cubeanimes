@@ -73,7 +73,7 @@ button {
   .premium-conteudo {
     width: 460px;
     height: 300px;
-    padding: 20px;
+    padding: 20px 30px;
   }
   .premium-btn {
     font-size: 1rem;
@@ -87,7 +87,7 @@ button {
   .premium-conteudo {
     width: 360px;
     height: 100%;
-    padding: 20px;
+    padding: 20px 30px;
   }
   .premium-btn {
     margin-top: 20px;
@@ -102,7 +102,7 @@ button {
   .premium-conteudo {
     width: 360px;
     height: 100%;
-    padding: 20px;
+    padding: 20px 40px;
   }
   .premium-btn {
     margin-top: 20px;
