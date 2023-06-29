@@ -44,9 +44,9 @@ X SEGUNDOS O POP UP APARECE AUTOMATICO*/
 }
 
 .contentBox .content-pop .pop-h2 {
-  font-size: 1em;
+  font-size: 0.9rem;
   margin-top: 5px;
-  color: #f2000d;
+  color: #383838;
   line-height: 1rem;
 }
 
