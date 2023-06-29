@@ -26,7 +26,7 @@ window.onload = function () {
     popup.style.opacity = "1";
 
     // ADICIONAR ALGUNS SEGUNDOS DE DELAY PRA MOSTRAR O POP UP
-  }, 1000);
+  }, 30000);
 };
 // FECHAR POP UP AO CLICAR NO X
 close.addEventListener("click", () => {
