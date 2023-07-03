@@ -122,7 +122,7 @@ section details p {
 
 @media (max-width: 800px) {
   .divSobre {
-    margin: 0px 30px;
+    margin: 10px 30px;
   }
   .cont-cardSobre {
     margin-top: 20px;
@@ -136,7 +136,7 @@ section details p {
        object-position: top;
   }
   section details {
-    margin-bottom: -20px;
+    margin-bottom: -10px;
   }
   section details summary {
     margin: 20px 30px;
@@ -144,7 +144,8 @@ section details p {
     color: #ffffff;
   }
   section details p {
-    margin: 0px 30px;
+    margin: 10px 30px;
+    font-size: 0.95rem;
   }
   .cont-cardSobre {
     display: grid;
