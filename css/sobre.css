@@ -122,7 +122,10 @@ section details p {
 
 @media (max-width: 800px) {
   .divSobre {
-    margin: 10px 30px;
+    margin: 0px 30px;
+  }
+  .divSobre img {
+    border-radius: 4px;
   }
   .cont-cardSobre {
     margin-top: 20px;
