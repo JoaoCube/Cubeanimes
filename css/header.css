@@ -59,6 +59,13 @@ header.sticky {
   .header {
     padding: 5px 20px;
   }
+  .header li > p {
+    font-size: 0.8rem;
+  }
+  /* LOGOMARCA */
+  .header a {
+    font-size: 0.8rem;
+  }
   .header-menu {
     gap: 25px;
   }

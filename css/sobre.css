@@ -70,6 +70,12 @@
   padding: 20px 0px;
 }
 
+@media (max-width: 1240px) {
+  .sobre-container {
+    margin: 40px;
+  }
+}
+
 @media (max-width: 800px) {
   .bannerImagem {
     height: 400px;
