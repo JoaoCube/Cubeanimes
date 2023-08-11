@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -24,7 +24,7 @@
       <ul>
         <li class="item"> <a href="./index.html">
             <div class="item-icon">
-              <i class="fa-solid fa-house fa-xl" style="color: #f9f9fc;"></i>
+              <i class="fa-solid fa-house" style="color: #ffffff;"></i>
               <div class="text-icon">
                 <strong>Inicio</strong>
                 <p>Voltar ao inicio do site.</p>
@@ -35,8 +35,7 @@
 
         <li class="item"> <a href="./sobre.html">
             <div class="item-icon">
-              <i class="fa-sharp fa-solid fa-list fa-xl" style="color: #f9f9fc;">
-              </i>
+              <i class="fa-solid fa-list-check" style="color: #ffffff;"></i>
               <div class="text-icon">
                 <strong>Sobre</strong>
                 <p>Saiba mais sobre a CubeAnimes!</p>
@@ -47,8 +46,7 @@
 
         <li class="item"> <a href="./Drstone.html">
             <div class="item-icon">
-              <i class="fa-solid fa-book fa-xl" style="color: #f9f9fc;">
-              </i>
+              <i class="fa-solid fa-bookmark" style="color: #ffffff;"></i>
               <div class="text-icon">
                 <strong>Animes</strong>
                 <p>Veja todo nosso catalogo.</p>
@@ -57,9 +55,9 @@
           </a>
         </li>
 
-        <li class="item"> <a href="./Cubepass.html">
+        <li class="item"> <a href="#">
             <div class="item-icon">
-              <i class="fa-solid fa-ticket fa-xl" style="color: #f9f9fc;"></i>
+              <i class="fa-solid fa-ticket" style="color: #ffffff;"></i>
               <div class="text-icon">
                 <strong>Cube Pass</strong>
                 <p>Que tal ter acesso a todo o site?</p>
@@ -69,10 +67,10 @@
 
         <li class="item"> <a href="#">
             <div class="item-icon">
-              <i class="fa-solid fa-address-book fa-xl" style="color: #f9f9fc;"></i>
+              <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>
               <div class="text-icon">
-                <strong>Contato</strong>
-                <p>Alguma duvida? Fale conosco.</p>
+                <strong>Calendario</strong>
+                <p>Data de quando sai episodios.</p>
               </div>
             </div>
           </a>
@@ -85,21 +83,26 @@
 
   <header class="header-bg">
     <div class="header">
+      <li onclick="openModal()" class="btn-hamburger">
+        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        <p>Navegar</p>
+      </li>
+
       <a href="./index.html">
-        <img src="./publics/imgs/cube-logo.svg" alt="Logomarca" class="logo"></a>
+        <h2>Logomarca</h2>
+      </a>
 
       <nav aria-label="primaria">
         <ul class="header-menu">
           <li>
-            <i class="fa-sharp fa-solid fa-magnifying-glass fa-xl" style="color: #f9f9fc;"></i>
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
           </li>
+
 
           <li>
-            <i class="fa-solid fa-user fa-xl" style="color: #f9f9fc;"></i>
+
           </li>
 
-          <li onclick="openModal()" class="btn-hamburger"><i class="fa-sharp fa-solid fa-bars fa-2xl" id="icon" style="color: #f9f9fc;"></i>
-          </li>
 
         </ul>
       </nav> <!-- FIM NAVBAR CONTAINER -->
@@ -113,150 +116,52 @@
     <a href="#" class="btn"></a>
     <!--FIM BOTAO DE VOLTAR AO TOPO-->
 
-    <div class="containerSobre">
-
-      <div class="divSobre">
-        <img src="https://images3.alphacoders.com/104/104547.jpg">
+    <section class="sobre-bg">
+      <div class="bannerImagem">
+        <img src="https://cdn-uploads.gameblog.fr/img/news/437782_64c1260b7f81f.jpg">
       </div>
 
-      <section>
-        <details>
-          <summary>Cubeanimes - O melhor site para baixar e assistir anime online!</summary>
-          <p> No final de 2022, depois de verificar sites populares de streaming de anime gratuitos, descobrimos que os sites não tinham uma boa interface de usuário e não fornecia uma boa experiência de usuário. Então, nossa equipe criou o Cubeanimes para fornecer aos fãs de anime um melhor.</p>
-        </details>
+      <article class="sobre-container">
+        <h2>Perguntas Frequentes:</h2>
 
-        <details>
-          <summary>O que é o Cubeanimes?</summary>
-          <p>CubeAnimes é um site de streaming de anime onde você pode assistir anime on-line em qualidade HD gratuitamente com legendas em portugues ou dublado. Você também pode baixar qualquer anime que quiser!</p>
-        </details>
+        <button class="accordion">Por que usar o Cubeanimes?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
 
-        <details>
-          <summary>Cubeanimes é seguro?</summary>
-          <p>Sim. Começamos este site para melhorar a experiência do usuário e estamos comprometidos em manter nossos usuários seguros. Encorajamos todos os nossos usuários a nos notificar se algo parecer suspeito. Por favor, entenda que temos que executar anúncios para manter o site.</p>
-        </details>
+        <button class="accordion">O site tem uma boa segurança?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
 
-        <details>
-          <summary>O que faz o Cubeanimes ser o melhor site para assistir animes online?</summary>
-          <p> - Biblioteca de conteúdo: Você pode encontrar quase tudo aqui.
-            <br>- Qualidade / Resolução: Todos os nossos arquivos de vídeo são codificados na mais alta resolução possível.
+        <button class="accordion">Quais as formas de pagamento?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
 
-            <br>- Interface de usuário: Nós nos concentramos no simples e fácil de usar, para que você sinta que a vida é mais fácil aqui. Também temos quase todos os recursos que outros sites de streaming de anime têm, mas não o contrário.
+        <button class="accordion">Tenho limite de downloads?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </article>
 
-
-            <br>- Compatibilidade de dispositivos: CubeAnimes funciona bem em computadores e dispositivos móveis, mesmo com navegadores antigos, para que você possa desfrutar do seu anime em qualquer lugar que quiser.
-          </p>
-        </details>
-      </section>
-
-      <div class="cont-cardSobre">
-
-        <div class="cardSobre">
-          <div class="cardSobre-info">
-            <div class="cardSobre-avatar">
-              <img src="https://i.pinimg.com/736x/18/84/21/18842123b9e50b7a406df675184df36f.jpg">
-            </div>
-            <div class="cardSobre-title">Joao Cube</div>
-            <div class="cardSobre-subtitle">Front-End &amp; Designer</div>
-          </div>
-
-          <ul class="cardSobre-social">
-            <li class="cardSobre-social__item">
-              <a href="">
-                <i class="fa-brands fa-github fa-lg" style="color: #f9f9fc;"></i>
-              </a>
-            </li>
-
-            <li class="cardSobre-social__item">
-              <a href="">
-                <i class="fa-brands fa-twitter fa-lg" style="color: #f9f9fc;"></i>
-              </a>
-            </li>
-
-            <li class="cardSobre-social__item">
-              <a href="">
-                <i class="fa-brands fa-linkedin fa-lg" style="color: #f9f9fc;"></i>
-              </a>
-            </li>
-          </ul>
-        </div> <!--FIM CARD 1 SOBRE-->
-
-        <!--CARD 2 SOBRE-->
-        <div class="cardSobre">
-          <div class="cardSobre-info">
-
-            <div class="cardSobre-avatar">
-              <img src="https://64.media.tumblr.com/b872c61ab5ad127d69cbb2ea867c9686/77f62d756529cff0-7a/s400x600/4a9c06ec84c05dbd46a64c8c6c716872fd476651.jpg">
-            </div>
-            <div class="cardSobre-title">D. Roger</div>
-            <div class="cardSobre-subtitle">Back-End &amp; Designer</div>
-          </div>
-
-          <ul class="cardSobre-social">
-            <li class="cardSobre-social__item">
-              <a href="">
-                <i class="fa-brands fa-github fa-lg" style="color: #f9f9fc;"></i>
-              </a>
-            </li>
-
-            <li class="cardSobre-social__item">
-              <a href="">
-                <i class="fa-brands fa-twitter fa-lg" style="color: #f9f9fc;"></i>
-              </a>
-            </li>
-
-            <li class="cardSobre-social__item">
-              <a href="">
-                <i class="fa-brands fa-linkedin fa-lg" style="color: #f9f9fc;"></i>
-              </a>
-            </li>
-          </ul>
-
-        </div> <!--FIM CARD 2 SOBRE-->
-
-        <!--CARD 3 SOBRE-->
-        <div class="cardSobre">
-          <div class="cardSobre-info">
-            <div class="cardSobre-avatar">
-              <img src="./publics/imgs/cube-logo.png">
-            </div>
-            <div class="cardSobre-title">CubeElement®</div>
-            <div class="cardSobre-subtitle">Company</div>
-          </div>
-
-          <ul class="cardSobre-social">
-            <li class="cardSobre-social__item">
-              <a href="">
-                <i class="fa-brands fa-github fa-lg" style="color: #f9f9fc;"></i>
-              </a>
-            </li>
-
-            <li class="cardSobre-social__item">
-              <a href="">
-                <i class="fa-brands fa-twitter fa-lg" style="color: #f9f9fc;"></i>
-              </a>
-            </li>
-
-            <li class="cardSobre-social__item">
-              <a href="">
-                <i class="fa-brands fa-linkedin fa-lg" style="color: #f9f9fc;"></i>
-              </a>
-            </li>
-          </ul>
-        </div> <!--FIM CARD 3 SOBRE-->
-
-      </div> <!--FIM CONTAINER CARDS SOBRE-->
-    </div> <!--FIM CONTAINER SOBRE-->
-
+    </section>
   </main>
 
   <footer class="footer-bg">
     <div class="footer-container">
       <div class="footer-redes">
-        <i class="fa-brands fa-twitter fa-xl" style="color: #f9f9fc;"></i>
+        <a href="#">
+          <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+        </a>
 
-        <i class="fa-brands fa-instagram fa-xl" style="color: #f9f9fc;"></i>
+        <a href="https://www.instagram.com/_joaocube/">
+          <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        </a>
 
-        <i class="fa-brands fa-github fa-xl" style="color: #f9f9fc;"></i>
+        <a href="https://github.com/JoaoCube">
+          <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+        </a>
 
       </div>
 
@@ -264,10 +169,7 @@
     </div> <!-- FIM FOOTER CONTAINER -->
   </footer>
 
-  <script src="jquery-3.2.1.min.js"></script>
-  <a target="_blank" href="https://icons8.com/icon/nm86OWXFdc1P/1-key"></a>
   <script src="./styles/script.js"></script>
-
 </body>
 
 </html>

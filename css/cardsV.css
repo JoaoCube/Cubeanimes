@@ -6,7 +6,6 @@
   align-items: center;
   margin-bottom: 10px;
 }
-
 .cardsV-container h3::before {
   content: "";
   display: inline-block;
@@ -19,7 +18,6 @@
   margin-left: 20px;
   transition: width 0.3s;
 }
-
 .cardsV-container:hover h3::before {
   width: 30px;
 }
@@ -59,13 +57,15 @@
 .cardsV-conteudo ul li img {
   width: 100%;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  object-fit: cover;
+  object-position: top;
   border-radius: 10px;
-  -webkit-mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
-          mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 5%,
+    rgb(27, 27, 27) 80%
+  );
+  mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
 }
 
 .cardsV-conteudo ul li div {
@@ -84,7 +84,7 @@
   white-space: nowrap;
   overflow: hidden;
   color: #f9f9fc;
-  font-size: 0.975rem;
+  font-size: 0.9rem;
 }
 
 /*ANIMACAO CARD*/
@@ -98,8 +98,12 @@
 /*ANIMACAO NA IMAGEM DO CARD, ESCURECE MAIS A IMAGEM COM GRADIENT*/
 .cardsV-conteudo ul li img:hover {
   transition: 0.5s;
-  -webkit-mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
-          mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 5%,
+    rgb(27, 27, 27) 80%
+  );
+  mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
 }
 
 @media (max-width: 800px) {
@@ -130,4 +134,4 @@
     margin-right: 10px;
     font-size: 0.7rem;
   }
-}/*# sourceMappingURL=cardsV.css.map */
+} /*# sourceMappingURL=cardsV.css.map */

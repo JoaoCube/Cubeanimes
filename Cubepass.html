@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
             <ul>
                 <li class="item"> <a href="./index.html">
                         <div class="item-icon">
-                            <i class="fa-solid fa-house fa-xl" style="color: #f9f9fc;"></i>
+                            <i class="fa-solid fa-house" style="color: #ffffff;"></i>
                             <div class="text-icon">
                                 <strong>Inicio</strong>
                                 <p>Voltar ao inicio do site.</p>
@@ -35,8 +35,7 @@
 
                 <li class="item"> <a href="./sobre.html">
                         <div class="item-icon">
-                            <i class="fa-sharp fa-solid fa-list fa-xl" style="color: #f9f9fc;">
-                            </i>
+                            <i class="fa-solid fa-list-check" style="color: #ffffff;"></i>
                             <div class="text-icon">
                                 <strong>Sobre</strong>
                                 <p>Saiba mais sobre a CubeAnimes!</p>
@@ -47,8 +46,7 @@
 
                 <li class="item"> <a href="./Drstone.html">
                         <div class="item-icon">
-                            <i class="fa-solid fa-book fa-xl" style="color: #f9f9fc;">
-                            </i>
+                            <i class="fa-solid fa-bookmark" style="color: #ffffff;"></i>
                             <div class="text-icon">
                                 <strong>Animes</strong>
                                 <p>Veja todo nosso catalogo.</p>
@@ -57,9 +55,9 @@
                     </a>
                 </li>
 
-                <li class="item"> <a href="./Cubepass.html">
+                <li class="item"> <a href="#">
                         <div class="item-icon">
-                            <i class="fa-solid fa-ticket fa-xl" style="color: #f9f9fc;"></i>
+                            <i class="fa-solid fa-ticket" style="color: #ffffff;"></i>
                             <div class="text-icon">
                                 <strong>Cube Pass</strong>
                                 <p>Que tal ter acesso a todo o site?</p>
@@ -69,10 +67,10 @@
 
                 <li class="item"> <a href="#">
                         <div class="item-icon">
-                            <i class="fa-solid fa-address-book fa-xl" style="color: #f9f9fc;"></i>
+                            <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>
                             <div class="text-icon">
-                                <strong>Contato</strong>
-                                <p>Alguma duvida? Fale conosco.</p>
+                                <strong>Calendario</strong>
+                                <p>Data de quando sai episodios.</p>
                             </div>
                         </div>
                     </a>
@@ -85,21 +83,26 @@
 
     <header class="header-bg">
         <div class="header">
+            <li onclick="openModal()" class="btn-hamburger">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <p>Navegar</p>
+            </li>
+
             <a href="./index.html">
-                <img src="./publics/imgs/cube-logo.svg" alt="Logomarca" class="logo"></a>
+                <h2>Logomarca</h2>
+            </a>
 
             <nav aria-label="primaria">
                 <ul class="header-menu">
                     <li>
-                        <i class="fa-sharp fa-solid fa-magnifying-glass fa-xl" style="color: #f9f9fc;"></i>
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
                     </li>
+
 
                     <li>
-                        <i class="fa-solid fa-user fa-xl" style="color: #f9f9fc;"></i>
+
                     </li>
 
-                    <li onclick="openModal()" class="btn-hamburger"><i class="fa-sharp fa-solid fa-bars fa-2xl" id="icon" style="color: #f9f9fc;"></i>
-                    </li>
 
                 </ul>
             </nav> <!-- FIM NAVBAR CONTAINER -->
@@ -130,11 +133,17 @@
     <footer class="footer-bg">
         <div class="footer-container">
             <div class="footer-redes">
-                <i class="fa-brands fa-twitter fa-xl" style="color: #f9f9fc;"></i>
+                <a href="#">
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </a>
 
-                <i class="fa-brands fa-instagram fa-xl" style="color: #f9f9fc;"></i>
+                <a href="https://www.instagram.com/_joaocube/">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                </a>
 
-                <i class="fa-brands fa-github fa-xl" style="color: #f9f9fc;"></i>
+                <a href="https://github.com/JoaoCube">
+                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                </a>
 
             </div>
 
@@ -142,8 +151,6 @@
         </div> <!-- FIM FOOTER CONTAINER -->
     </footer>
 
-    <script src="jquery-3.2.1.min.js"></script>
-    <a target="_blank" href="https://icons8.com/icon/nm86OWXFdc1P/1-key"></a>
     <script src="./styles/script.js"></script>
 
 </body>

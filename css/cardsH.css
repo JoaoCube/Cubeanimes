@@ -1,32 +1,4 @@
-.title-area h3 {
-  color: #cfd0d1;
-  max-width: 1600px;
-  margin-bottom: 10px;
-}
-
-.title-area {
-  display: flex;
-  margin-bottom: 5px;
-}
-
-.title-area a {
-  margin-left: auto;
-  padding: 5px;
-  height: 20px;
-  opacity: 0.7;
-  font-size: 0.8rem;
-  text-align: center;
-  align-items: center;
-  border-radius: 8px;
-  border: 1px solid #f9f9fc;
-}
-
-.title-area a:hover {
-  border: 1px solid #cfd0d1;
-  opacity: 1;
-  background-color: #272727;
-}
-
+/* TITULO DA AREA */
 .cardsH-container h3::before {
   content: "";
   display: inline-block;
@@ -39,9 +11,37 @@
   margin-left: 20px;
   transition: width 0.3s;
 }
-
 .cardsH-container:hover h3::before {
   width: 30px;
+}
+.title-area h3 {
+  color: #cfd0d1;
+  max-width: 1600px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.title-area {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+/* VER TODOS TEXT BUTTON */
+.title-area a {
+  margin-left: auto;
+  padding: 5px;
+  height: 20px;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #f9f9fc;
+}
+.title-area a:hover {
+  border: 1px solid #cfd0d1;
+  opacity: 1;
+  background-color: #272727;
 }
 
 /* ACIMA TUDO SOBRE TITULO ACIMA DOS ANIMES------------------------------ */
@@ -77,19 +77,24 @@
 
 .cardsH-conteudo ul li img {
   border-radius: 8px;
-  -webkit-mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
-          mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 5%,
+    rgb(27, 27, 27) 80%
+  );
+  mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
 }
 
 .cardsH-conteudo ul li div {
   position: relative;
 }
 
+/* TITULO DO ANIME NO CARD */
 .cardsH-conteudo ul li div .title-cardH {
   position: absolute;
   color: #f9f9fc;
   top: 145px;
-  font-size: 0.975rem;
+  font-size: 0.9rem;
   left: 10px;
   z-index: 10;
   font-family: "Roboto", Arial, sans-serif;
@@ -111,8 +116,12 @@
 /*ANIMACAO NA IMAGEM DO CARD, ESCURECE MAIS A IMAGEM COM GRADIENT*/
 .cardsH-conteudo ul li img:hover {
   transition: 0.5s;
-  -webkit-mask-image: linear-gradient(to top, transparent 20%, rgb(27, 27, 27) 130%);
-          mask-image: linear-gradient(to top, transparent 20%, rgb(27, 27, 27) 130%);
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 20%,
+    rgb(27, 27, 27) 130%
+  );
+  mask-image: linear-gradient(to top, transparent 20%, rgb(27, 27, 27) 130%);
 }
 
 @media (max-width: 800px) {
@@ -143,7 +152,11 @@
   }
   .cardsH-conteudo ul li img {
     border-radius: 8px;
-    -webkit-mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 70%);
-            mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 70%);
+    -webkit-mask-image: linear-gradient(
+      to top,
+      transparent 1%,
+      rgb(27, 27, 27) 70%
+    );
+    mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 70%);
   }
-}/*# sourceMappingURL=cardsH.css.map */
+} /*# sourceMappingURL=cardsH.css.map */

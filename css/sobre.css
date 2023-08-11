@@ -1,168 +1,73 @@
 /*TUDO SOBRE A PAGINA SOBRE*/
-/*CONTAINER DE CARDS DO SOBRE*/
-.cont-cardSobre {
-  display: flex;
-  margin-top: 100px;
-  margin-bottom: 100px;
+.sobre-bg {
+  padding-bottom: 100px;
+  background-color: #161616;
 }
-
-.cardSobre {
-  margin: 0 auto;
-  max-width: 1200px;
-  margin-top: 30px;
-  border: 1px ridge #222222;
-  border-radius: 5px;
-  width: 250px;
-  height: 200px;
-  /*background: #0e0c0c;*/
-  padding: 2rem 1.5rem;
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
+.bannerImagem {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
 }
-
-.cardSobre-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+/*CONFIGURA BANNER DO SOBRE*/
+.bannerImagem img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: top;
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 1%,
+    rgb(27, 27, 27) 90%
+  );
 }
 
 /*CONFIGURA CONTAINER DO SOBRE*/
-.containerSobre {
-  margin: 0 auto;
-  max-width: 1200px;
+.sobre-container {
+  margin: 60px auto;
+  max-width: 1400px;
 }
-
-.containerSobre .divSobre {
-  padding-top: 100px;
+.sobre-container h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
 }
-
-/*CONFIGURA BANNER DO SOBRE*/
-.containerSobre .divSobre img {
+.accordion {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 20px;
   width: 100%;
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  transition: 0.4s ease-in-out;
 }
 
-section details {
-  margin-bottom: 30px;
+.active,
+.accordion:hover {
+  background-color: #ccc;
 }
 
-section details summary {
-  margin-top: 10px;
-  background-color: rgba(242, 0, 13, 0.5);
-  padding: 2%;
-  color: #ffffff;
-  border-bottom: 1px solid #f9f9fc;
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
 }
 
-section details p {
-  background-color: #282828;
-  color: #f9f9fc;
-  padding: 2%;
-  transition: all 0.5s;
+.active:after {
+  content: "\2212";
 }
 
-/* IMAGEM */
-.cardSobre-avatar {
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  transition: transform 0.2s ease;
-  margin-bottom: 1rem;
+.panel {
+  padding: 0px 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel p {
+  padding: 20px 0px;
 }
 
-.cardSobre-avatar img {
-  box-sizing: border-box;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
-
-/*CARD FOOTER*/
-.cardSobre-social {
-  transform: translateY(200%);
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.cardSobre-social__item i {
-  display: block;
-  height: 18px;
-  width: 18px;
-  transition: 0.2s linear;
-}
-
-.cardSobre-social__item i:hover {
-  transform: scale(1.2);
-}
-
-/* TEXTO - TITLE*/
-.cardSobre-title {
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: 600;
-  line-height: 2rem;
-}
-
-.cardSobre-subtitle {
-  color: #ffffff;
-  font-size: 0.9em;
-}
-
-/* ANIMACAO AO MOUSE */
-.cardSobre:hover {
-  border: 1px solid #f2000d;
-  transition: 1s;
-}
-
-@media (max-width: 800px) {
-  .divSobre {
-    margin: 0px 30px;
-  }
-  .divSobre img {
-    border-radius: 4px;
-  }
-  .cont-cardSobre {
-    margin-top: 20px;
-  }
-  .containerSobre .divSobre img {
-    width: 100%;
-    height: 360px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: top;
-       object-position: top;
-  }
-  section details {
-    margin-bottom: -10px;
-  }
-  section details summary {
-    margin: 20px 30px;
-    background-color: #f2000d;
-    color: #ffffff;
-  }
-  section details p {
-    margin: 10px 30px;
-    font-size: 0.95rem;
-  }
-  .cont-cardSobre {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: center;
-  }
-  .cardSobre-title {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 2rem;
-  }
-  .cardSobre-subtitle {
-    color: #ffffff;
-    font-size: 0.7rem;
-  }
-}/*# sourceMappingURL=sobre.css.map */
+/*# sourceMappingURL=sobre.css.map */

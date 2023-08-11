@@ -12,35 +12,19 @@
 
 .modal {
   position: absolute;
-  top: 10%;
-  right: 30px;
+  left: -20px;
   width: 260px;
+  height: 100%;
+  background-color: #161616;
   padding: 20px;
-  background-color: #18181b;
-  border-radius: 6px;
-  transition: 0.2s linear;
-}
-
-.balao2:after {
-  /*Triangulo*/
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
-  /*Aqui entra a cor da "aba" do balão */
-  border-bottom: 20px solid #18181b;
-  top: -18px; /*localização. Experimente alterar para 'bottom'*/
-  right: 5px;
-  z-index: -1;
+  transition: 0.4s ease-in-out;
 }
 
 .modal ul {
+  padding-top: 60px;
   background-color: transparent;
 }
-
+/* CADA TEXTO ITEM */
 .modal ul .item {
   margin: 10px;
   padding: 10px;
@@ -55,7 +39,7 @@
 
 .modal ul .item:hover {
   padding: 10px 20px;
-  background-color: #0e0e12;
+  background-color: #000000;
   border-radius: 4px;
 }
 
@@ -72,7 +56,7 @@
 @keyframes animate-modal {
   from {
     opacity: 0;
-    transform: translate3d(0, -20px, 0);
+    transform: translate3d(-60px, 0, 0);
   }
   to {
     opacity: 1;
@@ -84,5 +68,5 @@
 }
 
 .mostrar .modal {
-  animation: animate-modal 0.3s;
-}/*# sourceMappingURL=modals.css.map */
+  animation: animate-modal 0.6s;
+} /*# sourceMappingURL=modals.css.map */
