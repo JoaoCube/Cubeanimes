@@ -70,4 +70,17 @@
   padding: 20px 0px;
 }
 
+@media (max-width: 800px) {
+  .bannerImagem {
+    height: 400px;
+  }
+  .bannerImagem img {
+    width: 100%;
+    height: 400px;
+  }
+  .sobre-container {
+    margin: 40px;
+  }
+}
+
 /*# sourceMappingURL=sobre.css.map */
