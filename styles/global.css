@@ -11,17 +11,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/*CONFIGURA CORES PARA CHAMAR COM A VARIAVEL*/
-:root {
-  --background-color: #0e0e0e;
-  --color-neutral-0: #0e0c0c;
-  --color-red: #f2000d;
-  --color-yellow: #daae1c;
-  --color-purple: #5c0eec;
-  --color-cinza: #cfd0d1;
-  --color-white: #f9f9fc;
-}
-
 h1,
 h2,
 h3,
@@ -48,32 +37,8 @@ a {
 img {
   width: 100%;
 }
-
-/*BOTAO VOLTAR AO TOPO*/
-.btn-totop {
-  z-index: 30;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: var(--color-red);
-  border-radius: 4px;
-  text-decoration: none;
-}
-/*ANIMACAO NO BOTAO VOLTAR AO TOPO*/
-.btn-totop::after {
-  content: "↑";
-  font-size: 32px;
-  font-weight: bold;
-  color: #cfd0d1;
-  transition: margin-top 250ms;
-}
-.btn-totop:hover::after {
-  margin-top: -8px;
+button {
+  border: none;
 }
 
 /*TUDO SOBRE A BARRA DE SCROLL LATERAL*/
@@ -81,21 +46,11 @@ body::-webkit-scrollbar {
   width: 5px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-red);
+  background-color: var(--color-white);
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #0e0e0e;
-}
-
-/*CUIDA DA COR DO TEXTO DOS TOPICOS: "DATA"*/
-.topicoCor {
-  color: #949494;
-}
-
-/*CUIDA DA COR DO TEXTO DOS TOPICOS: "DATA"*/
-.generoCor {
-  color: var(--color-yellow);
+  background-color: #777777;
 }
 
 .sec-geral {

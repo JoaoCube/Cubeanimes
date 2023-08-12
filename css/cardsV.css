@@ -1,6 +1,5 @@
 /* CONFIGURA TITULO ACIMA DAS LISTAS DE ANIMES */
 .cardsV-container h3 {
-  color: #cfd0d1;
   margin-right: auto;
   display: flex;
   align-items: center;
@@ -11,7 +10,7 @@
   display: inline-block;
   width: 1rem;
   height: 4px;
-  background-color: var(--color-purple);
+  background-color: var(--cor-5);
   align-self: center;
   align-items: center;
   margin-right: 10px;
@@ -50,6 +49,8 @@
 .cardsV-conteudo ul li {
   width: 230px;
   height: 300px;
+  background-color: #181818;
+  overflow: hidden;
   border-radius: 10px;
   border: 2px solid rgba(83, 83, 83, 0.178);
 }
@@ -73,18 +74,15 @@
   color: #f9f9fc;
 }
 
-.cardsV-conteudo ul li div > p {
+.cardsV-conteudo ul li div .title-cardV {
   position: absolute;
-  top: 88%;
+  top: 270px;
   left: 10px;
-  font-family: "Roboto", Arial, sans-serif;
   max-width: 22ch;
   text-transform: capitalize;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  color: #f9f9fc;
-  font-size: 0.9rem;
 }
 
 /*ANIMACAO CARD*/

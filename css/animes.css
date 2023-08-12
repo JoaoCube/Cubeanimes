@@ -18,8 +18,12 @@
   position: relative;
   height: 660px;
   filter: brightness(70%);
-  -webkit-mask-image: linear-gradient(to top, transparent 15%, rgb(14, 14, 14) 100%);
-          mask-image: linear-gradient(to top, transparent 15%, rgb(14, 14, 14) 100%);
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 15%,
+    rgb(14, 14, 14) 100%
+  );
+  mask-image: linear-gradient(to top, transparent 15%, rgb(14, 14, 14) 100%);
 }
 
 .geral-infoanime {
@@ -121,13 +125,17 @@
   .infoAnime-conteudo .bannerCapa {
     position: relative;
     filter: brightness(70%);
-    -webkit-mask-image: linear-gradient(to top, transparent 15%, rgb(14, 14, 14) 100%);
-            mask-image: linear-gradient(to top, transparent 15%, rgb(14, 14, 14) 100%);
+    -webkit-mask-image: linear-gradient(
+      to top,
+      transparent 15%,
+      rgb(14, 14, 14) 100%
+    );
+    mask-image: linear-gradient(to top, transparent 15%, rgb(14, 14, 14) 100%);
   }
   .bannerCapa img {
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .geral-infoanime {
     position: absolute;
@@ -212,4 +220,4 @@
     border-radius: 5px;
     opacity: 1;
   }
-}/*# sourceMappingURL=animes-page.css.map */
+} /*# sourceMappingURL=animes-page.css.map */

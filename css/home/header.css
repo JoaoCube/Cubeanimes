@@ -24,7 +24,8 @@
 
 /* LOGO DO SITE */
 .header .logo {
-  width: 40px;
+  width: 34px;
+  /* filter: invert(); */
   margin-right: auto;
   margin-left: auto;
 }

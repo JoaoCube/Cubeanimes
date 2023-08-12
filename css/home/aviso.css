@@ -21,9 +21,6 @@
 
 /* TEXTO DE AVISO */
 .aviso-conteudo p {
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
   text-align: center;
 }
 
@@ -34,4 +31,4 @@
   .aviso-conteudo p {
     font-size: 0.8rem;
   }
-}/*# sourceMappingURL=aviso.css.map */
+} /*# sourceMappingURL=aviso.css.map */

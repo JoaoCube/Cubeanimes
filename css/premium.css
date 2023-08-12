@@ -1,14 +1,12 @@
 /*CARD NO FINAL DO MAIN - PASS MENSAL*/
 .premium-bg {
   margin-top: 100px;
-  margin-bottom: 100px;
-  /* background-color: var(--color-white); */
+  padding: 100px 0px;
+  background-color: #161616;
 }
 
 .premium-container {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .premium-conteudo {
@@ -17,53 +15,34 @@
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  border-top: 2px solid var(--cor-3);
+  border-radius: 0px 0px 8px 8px;
   width: 550px;
-  height: 280px;
-  border-top: 2px solid var(--color-red);
+  height: 340px;
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 30px;
 }
 
-.premium-texts {
-  color: var(--color-white);
+.premium-conteudo .premium-texts {
+  padding: 40px;
+  text-align: center;
+}
+.premium-texts img {
+  width: 50px;
 }
 
-.premium-title {
-  margin: 0px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-}
-
-.premium-conteudo .premium-imagem {
-  margin: 0px;
-  padding: 0px;
-}
-
-.premium-imagem img {
-  width: 60px;
-}
-
-/*CONFIGURA BOTAO DO SLIDE TEXTO*/
-button {
-  background-color: none;
-  border: none;
-  outline: none;
-}
-
-.premium-btn {
-  color: #f9f9fc;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  background-color: var(--color-red);
-  font-size: 1.1rem;
-  margin: 0 auto;
-  border-radius: 4px;
-  transition: 0.3s linear;
-  width: -moz-max-content;
-  width: max-content;
+.premium-texts p {
+  margin-top: 10px;
   padding: 0px 40px;
 }
-
-.premium-btn:hover {
-  scale: 1.1;
+.premium-texts button {
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 16px 80px;
+  background-color: var(--cor-3);
+}
+.premium-texts button:hover {
+  background: linear-gradient(to right, var(--cor-3), #831212);
 }
 
 @media (max-width: 800px) {
@@ -109,4 +88,4 @@ button {
     font-size: 1rem;
     padding: 10px 40px;
   }
-}/*# sourceMappingURL=premium.css.map */
+} /*# sourceMappingURL=premium.css.map */

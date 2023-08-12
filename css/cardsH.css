@@ -4,20 +4,15 @@
   display: inline-block;
   width: 1rem;
   height: 4px;
-  background-color: var(--color-red);
-  align-self: center;
-  align-items: center;
-  margin-right: 10px;
-  margin-left: 20px;
+  background-color: var(--cor-3);
+  margin: 0px 10px;
   transition: width 0.3s;
 }
 .cardsH-container:hover h3::before {
   width: 30px;
 }
 .title-area h3 {
-  color: #cfd0d1;
   max-width: 1600px;
-  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -71,34 +66,30 @@
 .cardsH-conteudo ul li {
   width: 300px;
   height: 170px;
+  background-color: #181818;
+  overflow: hidden;
   border-radius: 10px;
   border: 2px solid rgba(83, 83, 83, 0.178);
 }
 
 .cardsH-conteudo ul li img {
   border-radius: 8px;
-  height: 170px;
   -webkit-mask-image: linear-gradient(
     to top,
     transparent 5%,
     rgb(27, 27, 27) 80%
   );
-  mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
 }
 
 .cardsH-conteudo ul li div {
   position: relative;
 }
-
 /* TITULO DO ANIME NO CARD */
 .cardsH-conteudo ul li div .title-cardH {
   position: absolute;
-  color: #f9f9fc;
   top: 145px;
-  font-size: 0.9rem;
   left: 10px;
   z-index: 10;
-  font-family: "Roboto", Arial, sans-serif;
   max-width: 28ch;
   text-transform: capitalize;
   text-overflow: ellipsis;
