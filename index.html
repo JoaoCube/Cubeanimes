@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/ico" href="./favicon.ico">
 
     <title>CubeAnimes - Download de Animes</title>
@@ -35,6 +36,79 @@
     </div> <!--FIM POP UP-->
 
     <div id="modal-hamburger" class="modal-hamburger">
+        <div class="modalLeft balao2">
+            <ul>
+                <li class="item">
+                    <a href="./index.html">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text-icon">
+                            <strong>Inicio</strong>
+                            <p>Voltar ao inicio do site.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="./sobre.html">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-list-check" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text-icon">
+                            <strong>Sobre</strong>
+                            <p>Saiba sobre a CubeAnimes!</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="./Drstone.html">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-book" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text-icon">
+                            <strong>Animes</strong>
+                            <p>Veja todo nosso catalogo.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text-icon">
+                            <strong>Calendário</strong>
+                            <p>Data de cada episodio.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text-icon">
+                            <strong>Cube PASS</strong>
+                            <p>Tenha acesso a tudo.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-comment" style="color: #ffffff;"></i>
+                        </div> <!-- FIM ITEM ICON -->
+                        <div class="text-icon">
+                            <strong>Contato</strong>
+                            <p>Fale conosco no chat.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div> <!-- FIM MODAL LEFT -->
+    </div> <!-- FIM MODAL HAMBURGER -->
+
+    <div id="modal-login" class="modal-login">
         <div class="modal balao2">
             <ul>
                 <li class="item"> <a href="./index.html">
@@ -70,62 +144,17 @@
                     </a>
                 </li>
 
-                <li class="item"> <a href="#">
-                        <div class="item-icon">
-                            <i class="fa-solid fa-ticket" style="color: #ffffff;"></i>
-                            <div class="text-icon">
-                                <strong>Cube Pass</strong>
-                                <p>Que tal ter acesso a todo o site?</p>
-                            </div>
-                        </div>
-                    </a></li>
-
-                <li class="item"> <a href="#">
-                        <div class="item-icon">
-                            <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>
-                            <div class="text-icon">
-                                <strong>Calendario</strong>
-                                <p>Data de quando sai episodios.</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
             </ul>
 
         </div>
     </div>
 
     <header class="header-bg">
-        <div class="header">
-            <li onclick="openModal()" class="btn-hamburger">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                <p>Navegar</p>
-            </li>
-
-            <a href="./index.html">
-                <img src="https://seeklogo.com/images/M/mouz-logo-F58A94DA2F-seeklogo.com.png" class="logo cor-9" alt="">
-            </a>
-
-            <nav aria-label="primaria">
-                <ul class="header-menu">
-                    <li>
-                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-                    </li>
-
-
-                    <li>
-
-                    </li>
-
-
-                </ul>
-            </nav> <!-- FIM NAVBAR CONTAINER -->
-        </div> <!-- FIM HEADER -->
-    </header> <!-- FIM HEADER BG -->
+    </header>
     <!----------------------------------------------------------------------->
 
     <main>
+
         <section class="sliderTop"> <!-- SLIDER TOP DO SITE -->
             <article class="slidesTop">
                 <!--RADIO BUTTONS-->
@@ -136,7 +165,7 @@
                 <input type="radio" name="radio-btn" id="radio5">
                 <!--FIM RADIO BUTTONS-->
 
-                <div class="slide first">
+                <div class="slide first" id="slide">
 
                     <section aria-label="informacoes" class="info-slide">
                         <img src="https://logosmarcas.net/wp-content/uploads/2021/10/One-Piece-Logo.png" alt="logo anime">
@@ -159,12 +188,12 @@
                     </section> <!--FIM INFO SLIDE 1-->
 
                     <div class="imagem-slide">
-                        <img src="https://cdn-uploads.gameblog.fr/img/news/437782_64c1260b7f81f.jpg">
+                        <img src="https://cdn-uploads.gameblog.fr/img/news/437782_64c1260b7f81f.jpg" id="imgSlide">
                     </div>
                 </div> <!--FIM SLIDE 1-->
 
                 <!--SLIDE IMAGENS 2-->
-                <div class="slide">
+                <div class="slide two" id="slide">
                     <section class="info-slide">
 
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Zom_100_Zombie_ni_Naru_made_ni_Shitai_100_no_Koto_Logo.png/640px-Zom_100_Zombie_ni_Naru_made_ni_Shitai_100_no_Koto_Logo.png">
@@ -185,12 +214,12 @@
 
                     </section> <!--FIM INFO SLIDE 5-->
                     <div class="imagem-slide">
-                        <img src="https://image.tmdb.org/t/p/original/u0ijYWX50bvbaUOWr3mpqZ9OcUK.jpg">
+                        <img src="https://image.tmdb.org/t/p/original/u0ijYWX50bvbaUOWr3mpqZ9OcUK.jpg" id="imgSlide">
                     </div>
                 </div> <!--FIM SLIDE 2-->
 
                 <!--SLIDE IMAGENS 3-->
-                <div class="slide">
+                <div class="slide" id="slide">
                     <section class="info-slide">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Jujutsu_Kaisen_logo_in_Japan.png" alt="logo Jujutsu Kaisen">
 
@@ -209,13 +238,13 @@
                     </section> <!--FIM INFO SLIDE 3-->
 
                     <div class="imagem-slide">
-                        <img src="https://images7.alphacoders.com/131/1318705.png">
+                        <img src="https://images7.alphacoders.com/131/1318705.png" id="imgSlide">
                     </div>
 
                 </div> <!--FIM SLIDE 3-->
 
                 <!--SLIDE IMAGENS 4-->
-                <div class="slide">
+                <div class="slide" id="slide">
                     <section class="info-slide">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Undead_Girl_Murder_Farce_Logo.png/1200px-Undead_Girl_Murder_Farce_Logo.png" alt="Logo Undead Murder Farce">
 
@@ -234,13 +263,13 @@
 
                     </section> <!--FIM TEXTO SLIDE 4-->
                     <div class="imagem-slide">
-                        <img src="https://www.animenewsnetwork.com/thumbnails/crop1200x630gHJ/cms/this-week-in-anime/200925/nicky_15.png.jpg">
+                        <img src="https://www.animenewsnetwork.com/thumbnails/crop1200x630gHJ/cms/this-week-in-anime/200925/nicky_15.png.jpg" id="imgSlide">
                     </div>
 
                 </div> <!--FIM  SLIDE 4-->
 
                 <!--SLIDE IMAGENS 5-->
-                <div class="slide">
+                <div class="slide" id="slide">
                     <section class="info-slide">
                         <img class="slide-title" src="https://saikoanimes.net/wp-content/themes/saikov3/img/slide/mob/mob.png">
 
@@ -259,7 +288,7 @@
                         <button class="btn-slide"> <a href="./Mobpsycho.html">+ Detalhes</a> </button>
                     </section> <!--FIM INFO SLIDE 2-->
                     <div class="imagem-slide">
-                        <img src="https://saikoanimes.net/wp-content/themes/saikov3/img/slide/mob/mob.jpg">
+                        <img src="https://saikoanimes.net/wp-content/themes/saikov3/img/slide/mob/mob.jpg" id="imgSlide">
                     </div>
                 </div> <!--FIM SLIDE 5-->
 
@@ -281,6 +310,7 @@
 
                 </div> <!-- FIM AVISO CONTAINER -->
             </article>
+
 
             <!-- LISTAS 1 HORIZONTAL -->
             <section class="cardsH-bg">
@@ -474,8 +504,7 @@
                 </article> <!--FIM DO CONTAINER CARDSV-->
             </section>
 
-        </section>
-        <!-- FIM SECTION GERAL -->
+        </section> <!-- FIM SECTION GERAL -->
 
         <section class="premium-bg">
             <article class="premium-container">
@@ -496,24 +525,6 @@
         </section> <!-- FIM PREMIUM BACKGROUND -->
 
         <footer class="footer-bg">
-            <div class="footer-container">
-                <div class="footer-redes">
-                    <a href="#">
-                        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/_joaocube/">
-                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                    </a>
-
-                    <a href="https://github.com/JoaoCube">
-                        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                    </a>
-
-                </div>
-
-                <p class="footer-direitos cor-9 font-2-s">CubeElement © Alguns direitos reservados.</p>
-            </div> <!-- FIM FOOTER CONTAINER -->
         </footer>
 
     </main>

@@ -69,12 +69,16 @@
   padding: 20px 0px;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1200px) {
   .sobre-container {
     margin: 40px;
   }
 }
-
+@media (max-width: 1024px) {
+  .sobre-container {
+    margin: 50px;
+  }
+}
 @media (max-width: 800px) {
   .bannerImagem {
     height: 400px;
@@ -84,11 +88,11 @@
     height: 400px;
   }
   .sobre-container {
-    margin: 20px;
-  }
-  .accordion {
-    font-size: 0.9rem;
+    margin: 50px;
   }
 }
-
-/*# sourceMappingURL=sobre.css.map */
+@media (max-width: 440px) {
+  .accordion {
+    font-size: 1rem;
+  }
+}

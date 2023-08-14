@@ -116,21 +116,15 @@
   mask-image: linear-gradient(to top, transparent 20%, rgb(27, 27, 27) 130%);
 }
 
-@media (max-width: 800px) {
-  .cardsH-bg {
-    width: 100%;
-    overflow: hidden;
-  }
+@media (max-width: 1200px) {
   .title-area a {
     font-size: 0.5rem;
   }
-  .title-area h3 {
-    font-size: 0.9rem;
-  }
+
   .cardsH-conteudo {
     margin-left: auto;
     margin-right: auto;
-    margin: 10px 20px;
+    margin-top: 10px 20px;
   }
   .cardsH-conteudo ul {
     display: grid;
@@ -139,19 +133,26 @@
     overflow-x: scroll;
     margin-left: 20px;
   }
-  .cardsH-conteudo ul li {
-    width: 300px;
-    height: 175px;
-    border-radius: 10px;
-    border: 2px solid rgba(83, 83, 83, 0.178);
+}
+@media (max-width: 800px) {
+  .cardsH-bg {
+    width: 100%;
+    overflow: hidden;
   }
-  .cardsH-conteudo ul li img {
-    border-radius: 8px;
-    -webkit-mask-image: linear-gradient(
-      to top,
-      transparent 1%,
-      rgb(27, 27, 27) 70%
-    );
-    mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 70%);
+  .title-area a {
+    font-size: 0.5rem;
   }
-} /*# sourceMappingURL=cardsH.css.map */
+
+  .cardsH-conteudo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px 20px;
+  }
+  .cardsH-conteudo ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    overflow-x: scroll;
+    margin-left: 20px;
+  }
+}

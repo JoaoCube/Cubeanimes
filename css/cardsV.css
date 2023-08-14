@@ -103,6 +103,26 @@
   );
   mask-image: linear-gradient(to top, transparent 5%, rgb(27, 27, 27) 80%);
 }
+@media (max-width: 1200px) {
+  .cardsH-conteudo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px 20px;
+  }
+  .cardsV-conteudo ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin-left: 20px;
+    overflow-x: scroll;
+  }
+
+  .title-area a {
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 0.7rem;
+  }
+}
 
 @media (max-width: 800px) {
   .cardsV-bg {
@@ -135,4 +155,4 @@
   .title-area h3 {
     font-size: 0.7rem;
   }
-} /*# sourceMappingURL=cardsV.css.map */
+}

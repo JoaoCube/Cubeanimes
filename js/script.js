@@ -1,3 +1,62 @@
+// repetir header e footer
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
+
+header.innerHTML = `
+<div class="header">
+<li onclick="openModal()" class="btn-hamburger">
+    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+    <p>Navegar</p>
+</li>
+
+<a href="./index.html">
+    <img src="https://seeklogo.com/images/M/mouz-logo-F58A94DA2F-seeklogo.com.png" class="logo cor-9" alt="">
+</a>
+
+<nav aria-label="primaria">
+    <ul class="header-menu">
+        <li>
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+        </li>
+
+
+        <li id="login" onclick="openLogin()">
+
+        </li>
+
+    </ul>
+</nav> <!-- FIM NAVBAR CONTAINER -->
+</div> <!-- FIM HEADER -->`;
+
+footer.innerHTML = `
+<div class="footer-container">
+<div class="footer-redes">
+    <a href="#">
+        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+    </a>
+
+    <a href="https://www.instagram.com/_joaocube/">
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+    </a>
+
+    <a href="https://github.com/JoaoCube">
+        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+    </a>
+
+</div>
+
+<p class="footer-direitos cor-9 font-2-s">CubeElement © Alguns direitos reservados.</p>
+</div> <!-- FIM FOOTER CONTAINER -->
+`;
+
+//BACKGROUND NO NAV AO ROLAR O SCROLL DO MOUSE PRA BAIXO
+var nav = document.querySelector("header");
+window.onscroll = () => {
+  this.scrollY > 18
+    ? nav.classList.add("sticky")
+    : nav.classList.remove("sticky");
+};
+
 // Perguntas Frequentes
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -33,32 +92,25 @@ close.addEventListener("click", () => {
 });
 */
 
-//BACKGROUND NO NAV AO ROLAR O SCROLL DO MOUSE PRA BAIXO
-var nav = document.querySelector("header");
-window.onscroll = () => {
-  this.scrollY > 18
-    ? nav.classList.add("sticky")
-    : nav.classList.remove("sticky");
-};
-
 // ABRIR MODAL DO HAMBURGER
 function openModal() {
-  const modal = document.getElementById("modal-hamburger");
-  modal.classList.add("mostrar");
+  const modalHamburger = document.getElementById("modal-hamburger");
+  modalHamburger.classList.add("mostrar");
 
-  modal.addEventListener("click", (e) => {
+  modalHamburger.addEventListener("click", (e) => {
     if (e.target.id == "modal-hamburger" || e.target.id == "fechar") {
-      modal.classList.remove("mostrar");
+      modalHamburger.classList.remove("mostrar");
       localStorage.fechaModal = "modal-hamburger";
     }
   });
 }
 
-// function toggleP() {
-//   let p = document.getElementById("resposta");
-//   if (p.style.display === "none") {
-//     p.style.display = "block";
-//   } else {
-//     p.style.display = "none";
-//   }
-// }
+function openLogin() {
+  const modalLogin = document.getElementById("modal-login");
+  modalLogin.classList.add("mostrar");
+
+  modalLogin.addEventListener("click", (e) => {
+    modalLogin.classList.remove("mostrar");
+    localStorage.fechaModal = "modal-login";
+  });
+}
