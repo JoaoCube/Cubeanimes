@@ -20,138 +20,133 @@
 <body>
 
     <div id="modal-hamburger" class="modal-hamburger">
-        <div class="modal balao2">
-            <ul>
-                <li class="item"> <a href="./index.html">
+        <div class="modalLeft balao2">
+            <ul class="menu-item">
+                <li class="item">
+                    <a href="./index.html">
                         <div class="item-icon">
                             <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                            <div class="text-icon">
-                                <strong>Inicio</strong>
-                                <p>Voltar ao inicio do site.</p>
-                            </div>
+                        </div>
+                        <div class="text-icon">
+                            <strong class="cor-9">Inicio</strong>
+                            <p class="cor-7">Voltar ao inicio do site.</p>
                         </div>
                     </a>
                 </li>
-
-                <li class="item"> <a href="./sobre.html">
+                <li class="item">
+                    <a href="./sobre.html">
                         <div class="item-icon">
                             <i class="fa-solid fa-list-check" style="color: #ffffff;"></i>
-                            <div class="text-icon">
-                                <strong>Sobre</strong>
-                                <p>Saiba mais sobre a CubeAnimes!</p>
-                            </div>
+                        </div>
+                        <div class="text-icon">
+                            <strong>Sobre</strong>
+                            <p>Saiba sobre a CubeAnimes!</p>
                         </div>
                     </a>
                 </li>
-
-                <li class="item"> <a href="./Drstone.html">
+                <li class="item">
+                    <a href="./Drstone.html">
                         <div class="item-icon">
-                            <i class="fa-solid fa-bookmark" style="color: #ffffff;"></i>
-                            <div class="text-icon">
-                                <strong>Animes</strong>
-                                <p>Veja todo nosso catalogo.</p>
-                            </div>
+                            <i class="fa-solid fa-book" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text-icon">
+                            <strong>Animes</strong>
+                            <p>Veja todo nosso catalogo.</p>
                         </div>
                     </a>
                 </li>
-
-                <li class="item"> <a href="#">
-                        <div class="item-icon">
-                            <i class="fa-solid fa-ticket" style="color: #ffffff;"></i>
-                            <div class="text-icon">
-                                <strong>Cube Pass</strong>
-                                <p>Que tal ter acesso a todo o site?</p>
-                            </div>
-                        </div>
-                    </a></li>
-
-                <li class="item"> <a href="#">
+                <li class="item">
+                    <a href="#">
                         <div class="item-icon">
                             <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>
-                            <div class="text-icon">
-                                <strong>Calendario</strong>
-                                <p>Data de quando sai episodios.</p>
-                            </div>
+                        </div>
+                        <div class="text-icon">
+                            <strong>Calendário</strong>
+                            <p>Data de cada episodio.</p>
                         </div>
                     </a>
                 </li>
-
+                <li class="item">
+                    <a href="Cubepass.html">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="text-icon">
+                            <strong>Cube PASS</strong>
+                            <p>Tenha acesso a tudo.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="contato.html">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-comment" style="color: #ffffff;"></i>
+                        </div> <!-- FIM ITEM ICON -->
+                        <div class="text-icon">
+                            <strong>Contato</strong>
+                            <p>Fale conosco no chat.</p>
+                        </div>
+                    </a>
+                </li>
             </ul>
-
-        </div>
-    </div>
+        </div> <!-- FIM MODAL LEFT -->
+    </div> <!-- FIM MODAL HAMBURGER -->
 
     <header class="header-bg">
-        <div class="header">
-            <li onclick="openModal()" class="btn-hamburger">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                <p>Navegar</p>
-            </li>
-
-            <a href="./index.html">
-                <h2>Logomarca</h2>
-            </a>
-
-            <nav aria-label="primaria">
-                <ul class="header-menu">
-                    <li>
-                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-                    </li>
-
-
-                    <li>
-
-                    </li>
-
-
-                </ul>
-            </nav> <!-- FIM NAVBAR CONTAINER -->
-        </div> <!-- FIM HEADER -->
     </header> <!-- FIM HEADER BG -->
     <!------------------------------------------------------------------------>
 
     <main>
+        <section class="pass-bg">
+            <article class="pass-container">
+                <div class="areatitle-pass cor-7">
+                    <h1 class="title-pass font-2-l">Selecione o seu Plano</h1>
+                    <p>Seu plano atual: Grátis</p>
+                </div>
+                <div class="pass-conteudo">
+                    <div class="containerConteudo">
+                        <div class="item-pass cor-8">
+                            <div class="left-textpass font-2-mR">
+                                <h3>Cube Pass - 30 dias</h3>
+                                <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
+                            </div>
+                            <div class="price-pass cor-7 font-2-xl">
+                                <strong>R$12,90</strong>
+                            </div>
+                        </div>
+                        <div class="item-pass cor-8">
+                            <div class="left-textpass font-2-mR">
+                                <h3>Cube Pass - 60 dias</h3>
+                                <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
+                            </div>
+                            <div class="price-pass cor-7 font-2-xl">
+                                <strong>R$21,90</strong>
+                            </div>
+                        </div>
+                        <div class="item-pass cor-8 font-2-mR">
+                            <div class="left-textpass">
+                                <h3>Cube Pass - 90 dias</h3>
+                                <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
+                            </div>
+                            <div class="price-pass cor-7 font-2-xl">
+                                <strong>R$31,90</strong>
+                            </div>
+                        </div>
+                        <div class="areabtn-pass">
+                            <input type="button" value="Proximo" class="cor-8 font-2-mR">
+                        </div>
 
-        <!--BOTAO DE VOLTAR AO TOPO-->
-        <a href="#" class="btn-totop"></a>
-        <!--FIM BOTAO DE VOLTAR AO TOPO-->
+                    </div> <!-- FIM CONTAINER CONTEUDO -->
+                </div> <!-- FIM PASS CONTEUDO -->
 
-        <br> <br> <br>
-        <div class="contCubePass">
-
-            <div class="cards-planos">
-                <div class="cardPay">1 MES</div>
-                <div class="cardPay">3 MESES</div>
-                <div class="cardPay">12 MESES</div>
-            </div>
-
-            <p>Assine o Plano que melhor se encaixa para voce!</p>
-        </div> <!--CONTAINER CUBE PASS-->
-
+            </article>
+        </section>
     </main>
 
     <footer class="footer-bg">
-        <div class="footer-container">
-            <div class="footer-redes">
-                <a href="#">
-                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-                </a>
-
-                <a href="https://www.instagram.com/_joaocube/">
-                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                </a>
-
-                <a href="https://github.com/JoaoCube">
-                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                </a>
-
-            </div>
-
-            <p class="footer-direitos">CubeElement © Alguns direitos reservados.</p>
-        </div> <!-- FIM FOOTER CONTAINER -->
     </footer>
 
-    <script src="./styles/script.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

@@ -5,6 +5,7 @@
 @import "../css/utilitarios.css/tipografia.css";
 @import "../css/home/header.css";
 @import "../css/slides.css";
+@import "../css/home/cubepass.css";
 @import "../css/home/popup.css";
 @import "../css/home/modals.css";
 @import "../css/sobre.css";
@@ -13,6 +14,7 @@
 @import "../css/cardsV.css";
 @import "../css/animes.css";
 @import "../css/premium.css";
+@import "../css/contato.css";
 @import "../css/home/footer.css";
 
 /*CONFIGURA O NAV MANUAL (BOLINHAS) COM CLIQUE*/

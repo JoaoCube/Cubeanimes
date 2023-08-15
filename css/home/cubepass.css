@@ -1,0 +1,93 @@
+.pass-bg {
+  background-color: var(--cor-0);
+  padding: 130px 0px;
+}
+.pass-container {
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: var(--cor-6); */
+  max-width: 1400px;
+  height: auto;
+  border-radius: 16px;
+}
+.pass-container .areatitle-pass {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: left;
+  max-width: 750px;
+}
+
+.pass-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pass-conteudo .item-pass {
+  cursor: pointer;
+  display: flex;
+  padding: 30px;
+  margin: 30px 0px;
+  width: 700px;
+  border-radius: 8px;
+  background-color: var(--cor-10);
+}
+.pass-conteudo .item-pass:checked {
+  background-color: aqua;
+}
+.pass-conteudo .item-pass:hover {
+  background-color: var(--cor-3);
+  transition: ease-in-out 0.3s;
+}
+.item-pass .left-textpass {
+  margin-right: auto;
+}
+.areabtn-pass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.areabtn-pass input {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 20px 60px;
+  background-color: var(--cor-3);
+}
+
+@media (max-width: 800px) {
+  .pass-container .areatitle-pass {
+    max-width: 400px;
+  }
+  .pass-conteudo .item-pass {
+    padding: 20px;
+    margin: 30px 0px;
+    width: 400px;
+  }
+  .item-pass .left-textpass {
+    font-size: 0.9rem;
+  }
+  .item-pass .price-pass {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .pass-container .areatitle-pass {
+    max-width: 360px;
+  }
+  .pass-conteudo .item-pass {
+    padding: 20px;
+    margin: 30px 0px;
+    width: 340px;
+  }
+  .item-pass .left-textpass {
+    font-size: 0.8rem;
+  }
+  .item-pass .price-pass {
+    font-size: 1.2rem;
+  }
+  .areabtn-pass input {
+    padding: 20px 40px;
+  }
+}

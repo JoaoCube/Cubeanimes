@@ -11,56 +11,48 @@
 
 .modalLeft {
   position: absolute;
-  left: -10px;
-  width: 250px;
+  left: -0px;
+  width: 230px;
   height: 100%;
-  background-color: var(--cor-2);
-  padding: 0px 20px;
+  background-color: var(--cor-0);
+  padding: 0px 10px;
   animation: animate-modal 0.3s;
 }
 
 .modalLeft ul {
   margin-top: 80px;
-  background-color: transparent;
   animation: animate-modal 0.5s;
 }
-/* CADA TEXTO ITEM */
+/* CADA ITEM DA LI */
 .modalLeft ul .item a {
-  margin: 10px;
+  margin: 10px 0px;
   padding: 10px;
   display: flex;
   justify-content: left;
   align-items: center;
-  color: #fff;
   transition: 0.2s ease-in-out;
 }
+/* DIV DA AREA ICON */
 .item a .item-icon {
-  width: 30px;
+  width: 16px;
+  background-color: var(--cor-10);
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-/* AREA DE TEXTO */
+/* DIV DA AREA DE TEXTO */
 .item a .text-icon {
-  margin-left: 10px;
+  padding-left: 10px;
 }
-
-.modalLeft ul .item .text-icon p {
+.item a .text-icon > p {
   font-size: 0.6rem;
-  color: #d4d4d4;
 }
-
 .modalLeft ul .item a:hover {
   padding: 10px 20px;
   background-color: #000000;
   border-radius: 4px;
-}
-
-.modalLeft ul .item-icon {
-  display: flex;
-  align-items: center;
-}
-
-.modalLeft ul li i {
-  margin-right: 12px;
 }
 
 @keyframes animate-modal {
@@ -76,7 +68,6 @@
 .modal-hamburger.mostrar {
   display: flex;
 }
-
 .mostrar .modal {
   animation: animate-modal 0.3s;
 }
