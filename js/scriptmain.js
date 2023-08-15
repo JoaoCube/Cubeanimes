@@ -18,11 +18,11 @@ function nextImage() {
 
 // Lista de imagens
 const imagens = [
-  "https://cdn-uploads.gameblog.fr/img/news/437782_64c1260b7f81f.jpg",
-  "https://image.tmdb.org/t/p/original/u0ijYWX50bvbaUOWr3mpqZ9OcUK.jpg",
-  "https://images7.alphacoders.com/131/1318705.png",
-  "https://www.animenewsnetwork.com/thumbnails/crop1200x630gHJ/cms/this-week-in-anime/200925/nicky_15.png.jpg",
-  "https://saikoanimes.net/wp-content/themes/saikov3/img/slide/mob/mob.jpg",
+  "/publics/imgs/img-op.png",
+  "/publics/imgs/img-zom100.jpg",
+  "/publics/imgs/img-jujutsu.png",
+  "/publics/imgs/img-Undead-Murder-Farce.jpg",
+  "/publics/imgs/img-mobpsycho.jpg",
 ];
 
 // Função para escolher uma imagem aleatória
