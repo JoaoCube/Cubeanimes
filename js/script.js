@@ -4,7 +4,7 @@ const footer = document.querySelector("footer");
 
 header.innerHTML = `
 <div class="header">
-<div class="leftmenu" onclick="openModal()" class="btn-hamburger">
+<div class="leftmenu" onclick="openHamburger()">
     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
     <p class="cor-8">Navegar</p>
 </div>
@@ -15,7 +15,7 @@ header.innerHTML = `
 
 <nav aria-label="primaria">
     <div class="rightmenu">
-        <div class="search">
+        <div class="search" onclick="openSearch()">
             <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
         </div>
         <div id="login" onclick="openLogin()"></div>
@@ -89,7 +89,7 @@ close.addEventListener("click", () => {
 */
 
 // ABRIR MODAL DO HAMBURGER
-function openModal() {
+function openHamburger() {
   const modalHamburger = document.getElementById("modal-hamburger");
   modalHamburger.classList.add("mostrar");
 
@@ -106,7 +106,21 @@ function openLogin() {
   modalLogin.classList.add("mostrar");
 
   modalLogin.addEventListener("click", (e) => {
-    modalLogin.classList.remove("mostrar");
-    localStorage.fechaModal = "modal-login";
+    if (e.target.id == "modal-login" || e.target.id == "fechar") {
+      modalLogin.classList.remove("mostrar");
+      localStorage.fechaModal = "modal-login";
+    }
+  });
+}
+
+function openSearch() {
+  const modalCenter = document.getElementById("modal-search");
+  modalCenter.classList.add("mostrar");
+
+  modalCenter.addEventListener("click", (e) => {
+    if (e.target.id == "modal-search" || e.target.id == "fechar") {
+      modalCenter.classList.remove("mostrar");
+      localStorage.fechaModal = "modal-search";
+    }
   });
 }
