@@ -18,11 +18,11 @@ function nextImage() {
 
 // Lista de imagens
 const imagens = [
-  "/publics/imgs/img-op.png",
-  "/publics/imgs/img-zom100.jpg",
-  "/publics/imgs/img-jujutsu.png",
-  "/publics/imgs/img-Undead-Murder-Farce.jpg",
-  "/publics/imgs/img-mobpsycho.jpg",
+  "img-op.png",
+  "img-zom100.jpg",
+  "img-jujutsu.png",
+  "img-Undead-Murder-Farce.jpg",
+  "img-mobpsycho.jpg",
 ];
 
 // Função para escolher uma imagem aleatória
