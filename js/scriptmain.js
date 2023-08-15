@@ -1,10 +1,9 @@
-/*
 //CUIDANDO DA ANIMACAO DO BANNER TOP-SITE
 let count = 1;
 document.getElementById("radio1").checked = true;
 setInterval(function () {
   nextImage();
-}, 2000);
+}, 10000);
 
 function nextImage() {
   count++;
@@ -14,8 +13,8 @@ function nextImage() {
 
   document.getElementById("radio" + count).checked = true;
 }
-*/
 
+/*
 // Lista de imagens
 const imagens = [
   "/publics/imgs/img-op.png",
@@ -37,3 +36,4 @@ window.addEventListener("load", () => {
   let novaImagemSrc = escolherImagemAleatoria();
   imagemElemento.src = novaImagemSrc;
 });
+*/
