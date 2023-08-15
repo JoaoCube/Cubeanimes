@@ -1,6 +1,7 @@
 .pass-bg {
   background-color: var(--cor-0);
   padding: 130px 0px;
+  height: 550px;
 }
 .pass-container {
   margin-left: auto;

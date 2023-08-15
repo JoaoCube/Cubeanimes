@@ -1,87 +1,17 @@
-/*AREA GERAL DOS SLIDES BANNER COM ANIMACAO*/
-.sliderTop {
-  overflow: hidden;
-}
-
-/*CONFIGURA TUDO SOBRE OS SLIDES*/
-.slidesTop {
-  width: 500%;
-  margin: 0 auto;
-  display: flex;
-}
-
-/*RADIOS SOMEM*/
-.slides input {
-  display: none;
-}
-
-/*CONFIGURA VELOCIDADE DOS SLIDES E TAMANHO*/
-.slide {
-  width: 20%;
+.slider-bg {
+  width: 100%;
   height: 100vh;
-  position: relative;
-  transition: step-start;
-  display: flex;
 }
-
-/*CONFIGURA CONTAINER TITULO/TEXTO NO SLIDE*/
-.info-slide {
-  padding-top: 110px;
-  padding-left: 170px;
-  color: #fff;
-  max-width: 500px;
-  position: absolute;
-  z-index: 10;
-}
-
-/*TITULO DO ANIME NO SLIDE*/
-.info-slide > img {
-  width: 400px;
-}
-
-/*CONFIGURA TAMANHO DOS TEXTOS DO SLIDE - SINOPSE*/
-.info-slide div > .sinopse {
-  margin-top: 20px;
+.slider {
+  width: 100%;
   overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 5; /* NUMERO MAX DE LINHAS */
-  -webkit-box-orient: vertical;
 }
-
-/*GENEROS DOS ANIMES*/
-.categorias {
-  margin-top: 20px;
-  text-transform: uppercase;
+/* CADA SLIDE-ITEM */
+.slide {
+  position: relative;
 }
-
-/*GENEROS DOS ANIMES*/
-.categorias span {
-  border: 1px ridge #ffffff;
-  border-radius: 15px;
-  padding: 8px;
-}
-
-/*CONFIGURA BOTAO DO SLIDE TEXTO*/
-.btn-slide {
-  color: #cfd0d1;
-  font-family: "Roboto", Arial, sans-serif;
-  text-align: center;
-  background-color: #f2000d;
-  font-size: 22px;
-  margin-top: 30px;
-  border-radius: 20px;
-  padding: 10px;
-  width: 140px;
-}
-
-.btn-slide:hover {
-  scale: 1.1;
-  transition: 0.3s ease;
-}
-
-/*DIV CONTAINER DA IMAGEM NO SLIDE*/
-.imagem-slide {
+/* AREA DA IMAGEM BACKGROUND */
+.slide .slide-img {
   width: 100%;
   -webkit-mask-image: linear-gradient(
     to right,
@@ -90,9 +20,7 @@
   );
   mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 70%);
 }
-
-/*CONFIGURA IMAGEM DOS SLIDES - TAMANHO, ETC*/
-.imagem-slide img {
+.slide .slide-img img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -102,6 +30,62 @@
     transparent 10%,
     rgb(27, 27, 27) 80%
   );
+  -moz-mask-image: linear-gradient(
+    to top,
+    transparent 10%,
+    rgb(27, 27, 27) 80%
+  );
+  -o-mask-image: linear-gradient(to top, transparent 10%, rgb(27, 27, 27) 80%);
+  -ms-mask-image: linear-gradient(to top, transparent 10%, rgb(27, 27, 27) 80%);
+}
+/* AREA DE INFO DO SLIDE, CATEGORIAS E TUDO */
+.slide .slide-info {
+  width: 600px;
+  left: 150px;
+  top: 10%;
+  position: absolute;
+}
+.slide-info .slide-logoanime {
+  overflow: hidden;
+  width: 400px;
+  height: 200px;
+}
+.slide-logoanime img {
+  width: 100%;
+}
+/*CONFIGURA - SINOPSE*/
+.slide-info .sinopse {
+  margin-top: 20px;
+  width: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* NUMERO MAX DE LINHAS */
+  -webkit-box-orient: vertical;
+}
+/*GENEROS DOS ANIMES*/
+.slide-info .categorias {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.categorias span {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px ridge #ffffff;
+  border-radius: 15px;
+  padding: 8px;
+}
+/*CONFIGURA BOTAO DO SLIDE*/
+.slide-info .btn-slide {
+  text-align: center;
+  background-color: var(--cor-3);
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 140px;
+}
+.slide-info .btn-slide:hover {
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 1200px) {
