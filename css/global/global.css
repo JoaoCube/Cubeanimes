@@ -2,8 +2,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background: var(--cor-0);
   font-family: "Poppins", "Roboto", Arial, sans-serif;
-  background: linear-gradient(to bottom, #141414, #0e0e0e);
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
@@ -62,5 +62,5 @@ body::-webkit-scrollbar-track {
 }
 
 input {
-  caret-color: #f2000d;
+  caret-color: var(--cor-3);
 }

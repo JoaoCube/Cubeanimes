@@ -4,29 +4,25 @@ const footer = document.querySelector("footer");
 
 header.innerHTML = `
 <div class="header">
-<li onclick="openModal()" class="btn-hamburger">
+<div class="leftmenu" onclick="openModal()" class="btn-hamburger">
     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-    <p>Navegar</p>
-</li>
+    <p class="cor-8">Navegar</p>
+</div>
 
 <a href="./index.html">
     <img src="https://seeklogo.com/images/M/mouz-logo-F58A94DA2F-seeklogo.com.png" class="logo cor-9" alt="">
 </a>
 
 <nav aria-label="primaria">
-    <ul class="header-menu">
-        <li>
+    <div class="rightmenu">
+        <div class="search">
             <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-        </li>
-
-
-        <li id="login" onclick="openLogin()">
-
-        </li>
-
-    </ul>
+        </div>
+        <div id="login" onclick="openLogin()"></div>
+    </div>
 </nav> <!-- FIM NAVBAR CONTAINER -->
-</div> <!-- FIM HEADER -->`;
+</div> <!-- FIM HEADER -->
+`;
 
 footer.innerHTML = `
 <div class="footer-container">

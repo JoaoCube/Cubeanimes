@@ -18,7 +18,6 @@
     transparent 5%,
     rgb(27, 27, 27) 70%
   );
-  mask-image: linear-gradient(to top, transparent 1%, rgb(27, 27, 27) 70%);
 }
 .slide .slide-img img {
   width: 100%;
@@ -30,13 +29,6 @@
     transparent 10%,
     rgb(27, 27, 27) 80%
   );
-  -moz-mask-image: linear-gradient(
-    to top,
-    transparent 10%,
-    rgb(27, 27, 27) 80%
-  );
-  -o-mask-image: linear-gradient(to top, transparent 10%, rgb(27, 27, 27) 80%);
-  -ms-mask-image: linear-gradient(to top, transparent 10%, rgb(27, 27, 27) 80%);
 }
 /* AREA DE INFO DO SLIDE, CATEGORIAS E TUDO */
 .slide .slide-info {
@@ -88,103 +80,84 @@
   transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 1200px) {
-  .sliderTop {
+@media (max-width: 1440px) {
+  .slider {
+    width: 100%;
     overflow: hidden;
-    height: 600px;
   }
-  /*CONFIGURA CONTAINER TITULO/TEXTO NO SLIDE*/
-  .info-slide {
-    padding-top: 100px;
-    padding-left: 20px;
+  /* CADA SLIDE-ITEM */
+  .slide {
+    position: relative;
   }
-  .imagem-slide {
-    height: 600px;
+  /* AREA DA IMAGEM BACKGROUND */
+  .slide .slide-img {
+    width: 100%;
   }
-  .imagem-slide img {
-    filter: brightness(60%);
-    height: 600px;
+  .slide .slide-img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
   }
-  /* IMAGEM LOGO DO ANIME */
-  .info-slide > img {
-    width: 320px;
+  /* AREA DE INFO DO SLIDE, CATEGORIAS E TUDO */
+  .slide .slide-info {
+    width: 600px;
+    left: 60px;
+    top: 10%;
+    position: absolute;
   }
-  /*CONFIGURA TAMANHO DOS TEXTOS DO SLIDE - SINOPSE*/
-  .info-slide div > .sinopse {
-    max-width: 370px;
-    padding-top: 0px;
+  .slide-info .slide-logoanime {
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
   }
-  .categorias {
-    display: none;
-  }
-  .btn-slide {
-    font-size: 1rem;
-    margin-top: 10px;
+  .slide-logoanime img {
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
-  .sliderTop {
+  .slider-bg {
+    height: 400px;
+  }
+  .slider {
+    width: 100%;
     overflow: hidden;
-    height: 600px;
   }
-  /*CONFIGURA CONTAINER TITULO/TEXTO NO SLIDE*/
-  .info-slide {
-    padding-top: 100px;
-    padding-left: 20px;
+  /* CADA SLIDE-ITEM */
+  .slide {
+    position: relative;
+    height: 400px;
   }
-  .imagem-slide {
-    height: 600px;
+  /* AREA DA IMAGEM BACKGROUND */
+  .slide .slide-img {
+    width: 100%;
   }
-  .imagem-slide img {
-    filter: brightness(60%);
-    height: 600px;
+  .slide .slide-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
   }
-  /* IMAGEM LOGO DO ANIME */
-  .info-slide > img {
-    width: 320px;
+  /* AREA DE INFO DO SLIDE, CATEGORIAS E TUDO */
+  .slide .slide-info {
+    width: 500px;
+    left: 20px;
+    top: 0px;
+    position: absolute;
   }
-  /*CONFIGURA TAMANHO DOS TEXTOS DO SLIDE - SINOPSE*/
-  .info-slide div > .sinopse {
-    max-width: 370px;
-    padding-top: 0px;
-  }
-  .categorias {
+  .slide-info .sinopse {
     display: none;
   }
-  .btn-slide {
-    font-size: 1rem;
-    margin-top: 10px;
+  .slide-info .categorias {
+    display: none;
   }
-}
-@media (max-width: 440px) {
-  .sliderTop {
+  .slide-info .slide-logoanime {
+    margin-top: 100px;
     overflow: hidden;
-    height: 500px;
+    width: 250px;
+    height: 160px;
   }
-  /*CONFIGURA CONTAINER TITULO/TEXTO NO SLIDE*/
-  .info-slide {
-    margin-top: 260px;
-    padding-top: 0px;
-  }
-  .info-slide > img {
-    width: 200px;
-  }
-  .imagem-slide {
-    height: 500px;
-  }
-  .imagem-slide img {
-    filter: brightness(70%);
-    height: 500px;
-  }
-
-  /*CONFIGURA TAMANHO DOS TEXTOS DO SLIDE - SINOPSE*/
-  .info-slide div > .sinopse {
-    display: none;
-  }
-  .info-slide .categorias {
-    display: none;
-  }
-  .btn-slide {
-    margin-top: 10px;
+  .slide-logoanime img {
+    width: 100%;
   }
 }

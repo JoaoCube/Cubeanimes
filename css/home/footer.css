@@ -1,7 +1,7 @@
 .footer-bg {
   width: 100%;
   padding: 40px 0px;
-  background: #000000;
+  background: var(--cor-00);
 }
 
 .footer-container {

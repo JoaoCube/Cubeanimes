@@ -2,7 +2,7 @@
 .premium-bg {
   margin-top: 100px;
   padding: 100px 0px;
-  background-color: var(--cor-2);
+  background: linear-gradient(to bottom, var(--cor-0), var(--cor-10));
 }
 
 .premium-container {
@@ -19,7 +19,7 @@
   border-radius: 0px 0px 8px 8px;
   width: 550px;
   height: 340px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .premium-conteudo .premium-texts {
