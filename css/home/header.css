@@ -57,17 +57,17 @@ header.sticky {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
   }
+  .header .logo {
+    scale: 0.8;
+  }
   .header {
     padding: 5px 20px;
   }
-  .header li > p {
+  .header .leftmenu > p {
     font-size: 0.8rem;
   }
   /* LOGOMARCA */
   .header a {
     font-size: 0.8rem;
-  }
-  .header-menu {
-    gap: 25px;
   }
 }

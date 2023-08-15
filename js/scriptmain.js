@@ -51,4 +51,4 @@ function prevSlide() {
 showImage(currentIndex);
 
 // muda slide a cada x segundos
-setInterval(nextSlide, 20000);
+setInterval(nextSlide, 2000);
