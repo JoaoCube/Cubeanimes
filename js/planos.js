@@ -1,6 +1,6 @@
-// Obtém a lista de itens
+// Obtém a lista de planos
 const listaItens = document.getElementById("listaPass");
-// Obtém todos os itens da lista
+// Obtém todos os planos da lista
 const itens = listaItens.getElementsByTagName("li");
 // Adiciona um ouvinte de evento de clique a cada item
 for (let i = 0; i < itens.length; i++) {
@@ -46,5 +46,18 @@ voltarEtapaBtn.addEventListener("click", function () {
     etapa1.style.display = "block";
     etapaAtual = 1;
   }
-  // Implemente a lógica para voltar da etapa 3 para etapa 2 aqui
 });
+
+// marcar ao clicar no item inteiro e nao so no radio
+function marcarOpcao1() {
+  let opcao1 = document.getElementById("pix");
+  opcao1.checked = true;
+}
+function marcarOpcao2() {
+  let opcao2 = document.getElementById("boleto");
+  opcao2.checked = true;
+}
+function marcarOpcao3() {
+  let opcao3 = document.getElementById("cartao");
+  opcao3.checked = true;
+}

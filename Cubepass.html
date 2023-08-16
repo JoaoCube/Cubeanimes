@@ -138,7 +138,7 @@
 
                     <div class="pass-conteudo">
                         <ul class="items-pass" id="listaPass">
-                            <li class="item-pass cor-8">
+                            <li class="item-pass cor-8 ativo">
                                 <div class="left-textpass font-2-mR">
                                     <h3>Cube Pass - 30 dias</h3>
                                     <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
@@ -181,25 +181,28 @@
                     </div>
 
                     <div class="pay-conteudo">
-                        <ul class=' cor-8 font-2-mR'>
-                            <li class="item-pay">
-                                <input type="radio" name="my-input" id="pix" value="Pix" />
-                                <label for="Yes">Pix</label>
+                        <ul class='cor-8 font-2-mR'>
+
+                            <li class="item-pay" onclick=" marcarOpcao1()">
+                                <input type="radio" name="pagamento" id="pix" value="Pix" checked />
+                                <label for="pix" class="cor-8 font-2-mR">Pix</label>
                             </li>
-                            <li class="item-pay">
-                                <input type="radio" name="my-input" id="boleto" value="Boleto" />
-                                <label for="Boleto">Boleto</label>
+
+                            <li class="item-pay" onclick=" marcarOpcao2()">
+                                <input type="radio" name="pagamento" id="boleto" value="Boleto" />
+                                <label for="boleto" class="cor-8 font-2-mR">Boleto</label>
                             </li>
-                            <li class="item-pay">
-                                <input type="radio" name="my-input" id="cartao" value="Boleto" />
-                                <label for="Cartao de Credito">Cartao de Credito</label>
+
+                            <li class="item-pay" onclick=" marcarOpcao3()">
+                                <input type="radio" name="pagamento" id="cartao" value="cartao" />
+                                <label for="cartao" class="cor-8 font-2-mR">Cartao de Credito</label>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="areabtn-pass">
+                    <div class="areabtn-pay">
                         <button id="voltarEtapaBtn" class="cor-8 font-2-mR">Voltar</button>
-                        <button id="avancaEtapa2" class="cor-8 font-2-mR">Proximo</button>
+                        <button id="avancaEtapa2" action="./" method="post" class="cor-8 font-2-mR">Proximo</button>
                     </div>
                 </article>
             </section> <!-- FIM PAY BG -->
