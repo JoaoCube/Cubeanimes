@@ -127,51 +127,83 @@
     <!------------------------------------------------------------------------>
 
     <main>
-        <section class="pass-bg">
-            <article class="pass-container">
-                <div class="areatitle-pass cor-7">
-                    <h1 class="title-pass font-2-l">Selecione o seu Plano</h1>
-                    <p>Seu plano atual: <strong>Text Placeholder</strong></p>
-                </div>
+        <div class="cont-etapas">
 
-                <div class="pass-conteudo" id="elementoAlvo">
-                    <ul class="items-pass" id="listaPass">
-                        <li class="item-pass cor-8" onclick="ativarPlano()">
-                            <div class="left-textpass font-2-mR">
-                                <h3>Cube Pass - 30 dias</h3>
-                                <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
-                            </div>
-                            <div class="price-pass cor-7 font-2-xl">
-                                <strong>R$12,90</strong>
-                            </div>
-                        </li>
-                        <li class="item-pass cor-8" onclick="ativarPlano()">
-                            <div class="left-textpass font-2-mR">
-                                <h3>Cube Pass - 60 dias</h3>
-                                <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
-                            </div>
-                            <div class="price-pass cor-7 font-2-xl">
-                                <strong>R$21,90</strong>
-                            </div>
-                        </li>
-                        <li class="item-pass cor-8" onclick="ativarPlano()">
-                            <div class="left-textpass font-2-mR">
-                                <h3>Cube Pass - 90 dias</h3>
-                                <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
-                            </div>
-                            <div class="price-pass cor-7 font-2-xl">
-                                <strong>R$31,90</strong>
-                            </div>
-                        </li>
-                    </ul> <!-- FIM ITEMS PASS -->
-                </div> <!-- FIM PASS CONTEUDO -->
+            <section class="pass-bg" id="etapa1">
+                <article class="pass-container">
+                    <div class="areatitle-pass cor-7">
+                        <h1 class="title-pass font-2-l">Selecione o seu Plano</h1>
+                        <p>Seu plano atual: <strong>Text Placeholder</strong></p>
+                    </div>
 
-                <div class="areabtn-pass">
-                    <input type="button" value="Proximo" class="cor-8 font-2-mR" id="trocarDivBtn">
-                </div>
+                    <div class="pass-conteudo">
+                        <ul class="items-pass" id="listaPass">
+                            <li class="item-pass cor-8">
+                                <div class="left-textpass font-2-mR">
+                                    <h3>Cube Pass - 30 dias</h3>
+                                    <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
+                                </div>
+                                <div class="price-pass cor-7 font-2-xl">
+                                    <strong>R$12,90</strong>
+                                </div>
+                            </li>
+                            <li class="item-pass cor-8">
+                                <div class="left-textpass font-2-mR">
+                                    <h3>Cube Pass - 60 dias</h3>
+                                    <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
+                                </div>
+                                <div class="price-pass cor-7 font-2-xl">
+                                    <strong>R$21,90</strong>
+                                </div>
+                            </li>
+                            <li class="item-pass cor-8">
+                                <div class="left-textpass font-2-mR">
+                                    <h3>Cube Pass - 90 dias</h3>
+                                    <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
+                                </div>
+                                <div class="price-pass cor-7 font-2-xl">
+                                    <strong>R$31,90</strong>
+                                </div>
+                            </li>
+                        </ul> <!-- FIM ITEMS PASS -->
+                    </div> <!-- FIM PASS CONTEUDO -->
 
-            </article>
-        </section>
+                    <div class="areabtn-pass">
+                        <button id="avancaEtapa1" class="cor-8 font-2-mR">Proximo</button>
+                    </div>
+                </article>
+            </section> <!-- FIM PASS BG -->
+
+            <section class="pay-bg" id="etapa2">
+                <article class="pay-container">
+                    <div class="areatitle-pay cor-7">
+                        <h1 class="title-pay font-2-l">Selecione a Forma de Pagamento</h1>
+                    </div>
+
+                    <div class="pay-conteudo">
+                        <ul class=' cor-8 font-2-mR'>
+                            <li class="item-pay">
+                                <input type="radio" name="my-input" id="pix" value="Pix" />
+                                <label for="Yes">Pix</label>
+                            </li>
+                            <li class="item-pay">
+                                <input type="radio" name="my-input" id="boleto" value="Boleto" />
+                                <label for="Boleto">Boleto</label>
+                            </li>
+                            <li class="item-pay">
+                                <input type="radio" name="my-input" id="cartao" value="Boleto" />
+                                <label for="Cartao de Credito">Cartao de Credito</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="areabtn-pass">
+                        <button id="voltarEtapaBtn" class="cor-8 font-2-mR">Voltar</button>
+                        <button id="avancaEtapa2" class="cor-8 font-2-mR">Proximo</button>
+                    </div>
+                </article>
+            </section> <!-- FIM PAY BG -->
+        </div> <!-- FIM CONT ETAPAS -->
     </main>
 
     <footer class="footer-bg">
