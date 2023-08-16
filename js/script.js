@@ -23,7 +23,6 @@ header.innerHTML = `
 </nav> <!-- FIM NAVBAR CONTAINER -->
 </div> <!-- FIM HEADER -->
 `;
-
 footer.innerHTML = `
 <div class="footer-container">
 <div class="footer-redes">
@@ -44,9 +43,20 @@ footer.innerHTML = `
 <p class="footer-direitos cor-9 font-2-s">CubeElement © Alguns direitos reservados.</p>
 </div> <!-- FIM FOOTER CONTAINER -->
 `;
+// Ativar Links do LeftModal Sidebar
+const links = document.querySelectorAll(".modalLeft .menu-item .item a");
+
+function ativarLink(link) {
+  const url = location.href;
+  const href = link.href;
+  if (url.includes(href)) {
+    link.classList.add("ativo");
+  }
+}
+links.forEach(ativarLink);
 
 //BACKGROUND NO NAV AO ROLAR O SCROLL DO MOUSE PRA BAIXO
-var nav = document.querySelector("header");
+let nav = document.querySelector("header");
 window.onscroll = () => {
   this.scrollY > 18
     ? nav.classList.add("sticky")
@@ -54,8 +64,8 @@ window.onscroll = () => {
 };
 
 // Perguntas Frequentes
-var acc = document.getElementsByClassName("accordion");
-var i;
+let acc = document.getElementsByClassName("accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {

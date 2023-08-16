@@ -14,7 +14,8 @@
 }
 /*CONFIGURA BANNER DO SOBRE*/
 .bannerImagem img {
-  width: 100%;
+  width: 140%;
+  filter: grayscale(40%);
   height: 600px;
   object-fit: cover;
   object-position: center;
@@ -24,6 +25,8 @@
 .sobre-container {
   margin: 60px auto;
   max-width: 1400px;
+  padding: 20px;
+  /* background-color: var(--cor-3); */
 }
 .sobre-container h2 {
   margin-bottom: 20px;
@@ -39,25 +42,25 @@
 
 .active,
 .accordion:hover {
-  background-color: #ccc;
+  background-color: var(--cor-7);
 }
-
+/* SINAL DE + */
 .accordion:after {
   content: "\002B";
-  color: #777;
+  color: var(--cor-3);
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
-
+/* INAL DE - */
 .active:after {
   content: "\2212";
+  color: var(--cor-5);
 }
-
 .panel {
   padding: 0px 20px;
   margin-bottom: 40px;
-  background-color: white;
+  background-color: var(--cor-9);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -81,7 +84,7 @@
     height: 400px;
   }
   .bannerImagem img {
-    width: 100%;
+    width: 140%;
     height: 400px;
   }
   .sobre-container {

@@ -33,9 +33,10 @@
   border-radius: 8px;
   background-color: var(--cor-10);
 }
-.pass-conteudo .item-pass:checked {
-  background-color: aqua;
+.pass-conteudo .item-pass.ativo {
+  background-color: var(--cor-3);
 }
+
 .pass-conteudo .item-pass:hover {
   background-color: var(--cor-3);
   transition: ease-in-out 0.3s;
