@@ -23,7 +23,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .pass-conteudo .item-pass {
   cursor: pointer;
   display: flex;
@@ -55,6 +54,31 @@
   border-radius: 8px;
   padding: 20px 60px;
   background-color: var(--cor-3);
+}
+
+.pay-container {
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: var(--cor-6); */
+  max-width: 1400px;
+  height: auto;
+  border-radius: 16px;
+}
+.pay-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pay-conteudo ul li {
+  cursor: pointer;
+  padding: 30px;
+  margin: 30px 0px;
+  width: 700px;
+  border-radius: 8px;
+  background-color: var(--cor-10);
+}
+.pay-conteudo ul li input[radio] {
+  background-color: aquamarine;
 }
 
 @media (max-width: 800px) {

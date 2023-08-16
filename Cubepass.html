@@ -131,11 +131,12 @@
             <article class="pass-container">
                 <div class="areatitle-pass cor-7">
                     <h1 class="title-pass font-2-l">Selecione o seu Plano</h1>
-                    <p>Seu plano atual: Grátis</p>
+                    <p>Seu plano atual: <strong>Text Placeholder</strong></p>
                 </div>
-                <div class="pass-conteudo">
-                    <div class="containerConteudo">
-                        <div class="item-pass cor-8">
+
+                <div class="pass-conteudo" id="elementoAlvo">
+                    <ul class="items-pass" id="listaPass">
+                        <li class="item-pass cor-8" onclick="ativarPlano()">
                             <div class="left-textpass font-2-mR">
                                 <h3>Cube Pass - 30 dias</h3>
                                 <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
@@ -143,8 +144,8 @@
                             <div class="price-pass cor-7 font-2-xl">
                                 <strong>R$12,90</strong>
                             </div>
-                        </div>
-                        <div class="item-pass cor-8">
+                        </li>
+                        <li class="item-pass cor-8" onclick="ativarPlano()">
                             <div class="left-textpass font-2-mR">
                                 <h3>Cube Pass - 60 dias</h3>
                                 <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
@@ -152,22 +153,22 @@
                             <div class="price-pass cor-7 font-2-xl">
                                 <strong>R$21,90</strong>
                             </div>
-                        </div>
-                        <div class="item-pass cor-8 font-2-mR">
-                            <div class="left-textpass">
+                        </li>
+                        <li class="item-pass cor-8" onclick="ativarPlano()">
+                            <div class="left-textpass font-2-mR">
                                 <h3>Cube Pass - 90 dias</h3>
                                 <p class="cor-7">Todos os recursos do site + Cube PLEX</p>
                             </div>
                             <div class="price-pass cor-7 font-2-xl">
                                 <strong>R$31,90</strong>
                             </div>
-                        </div>
-                        <div class="areabtn-pass">
-                            <input type="button" value="Proximo" class="cor-8 font-2-mR">
-                        </div>
-
-                    </div> <!-- FIM CONTAINER CONTEUDO -->
+                        </li>
+                    </ul> <!-- FIM ITEMS PASS -->
                 </div> <!-- FIM PASS CONTEUDO -->
+
+                <div class="areabtn-pass">
+                    <input type="button" value="Proximo" class="cor-8 font-2-mR" id="trocarDivBtn">
+                </div>
 
             </article>
         </section>
@@ -175,7 +176,7 @@
 
     <footer class="footer-bg">
     </footer>
-
+    <script src="./js/planos.js"></script>
     <script src="./js/script.js"></script>
 
 </body>
