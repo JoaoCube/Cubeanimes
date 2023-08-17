@@ -125,36 +125,37 @@
   <header class="header-bg"></header>
 
   <main>
-    <section class="cadastrar-bg">
-      <article class="cadastrar-container">
-        <div class="areatitle-cadastrar cor-7">
-          <h1 class="title-cadastrar font-2-xl cor-9">Bem-vindo à Cube Animes</h1>
-          <p class="cor-7">Crie a sua conta abaixo :)</p>
+    <section class="login-bg">
+      <article class="login-container">
+        <div class="areatitle-login cor-7">
+          <h1 class="title-login font-2-xl cor-9">Bem-vindo à Cube Animes</h1>
+          <p class="cor-7">Crie sua conta abaixo :)</p>
         </div>
 
-        <div class="cadastrar-conteudo">
+        <div class="login-conteudo">
           <form action="#">
-            <div class="form-cadastrar cor-8">
-              <label for="nickname">Nome de Usuario</label>
-              <input type="text" class="cor-9" id="nickname" name="user_nickname" required>
-              <label for="nickname">Nome</label>
-              <input type="text" class="cor-9" id="nome" name="user_nome" required>
-              <label for="nickname">Sobrenome</label>
-              <input type="text" class="cor-9" id="sobrenome" name="user_sobrenome" required>
+            <div class="area-username">
+              <label class="input-label cor-9" for="text">Nome de Usuario:</label>
+              <input type="text" class="input-field cor-9" id="username" name="user_name" autocomplete="current-username" required>
+            </div>
+            <div class="area-email cor-8">
               <label class="input-label cor-9" for="email">Email:</label>
-              <input type="text" class="input-field cor-9" id="email" name="user_login" required>
+              <input type="text" class="input-field cor-9" id="email" name="user_cadastrar" autocomplete="current-username" required>
+            </div>
+            <div class="area-senha cor-8">
               <label class="input-label cor-9" for="email">Senha:</label>
-              <input type="password" name="password" id="Password" class="cor-8" required />
+              <input type="password" name="password" autocomplete="current-password" id="Password" class="cor-8" required />
               <i class="fa fa-eye" onclick="mouseoverPass();" onmouseout="mouseoutPass();" id="olho" class="olho"></i>
             </div>
-
-            <div class="area-logar">
-              <button class="submit-eye cor-9 font-2-mR" type="submit">Cadastrar</button>
-              <a href="login.html" class="cor-3">
-                <p>Ja tem conta? Faça Login!</p>
+            <div class="area-cadastrar">
+              <button class="submit-eye cor-9 font-2-mR" type="submit">Logar</button>
+              <a href="#" class="esqueceu-senha">
+                <p class="cor-9">Esqueceu a senha? Clique Aqui</p>
+              </a>
+              <a href="login.html" class=" criar-conta cor-3">
+                <p>Nao tem conta? Criar agora!</p>
               </a>
             </div>
-
           </form>
         </div> <!-- FIM LOGIN CONTEUDO -->
 
