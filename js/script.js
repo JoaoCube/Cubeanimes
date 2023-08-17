@@ -6,7 +6,6 @@ header.innerHTML = `
 <div class="header">
 <div class="leftmenu" onclick="openHamburger()">
     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-    <p class="cor-8">Navegar</p>
 </div>
 
 <a href="./index.html">
