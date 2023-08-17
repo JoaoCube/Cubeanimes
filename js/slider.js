@@ -24,7 +24,6 @@ window.addEventListener("load", () => {
 
 const slider = document.querySelector(".slider");
 const slides = slider.querySelectorAll(".slide");
-
 let currentIndex = 0;
 
 function showImage(index) {
@@ -49,6 +48,5 @@ function prevSlide() {
 
 // imagem inicial
 showImage(currentIndex);
-
 // muda slide a cada x segundos
 setInterval(nextSlide, 15000);

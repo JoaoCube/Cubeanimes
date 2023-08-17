@@ -14,6 +14,7 @@
 @import "../body/cardsV.css";
 @import "../body/animes.css";
 @import "../body/premium.css";
-@import "../body/login.css";
+@import "../home/login.css";
+@import "../home/cadastrar.css";
 @import "../body/contato.css";
 @import "../home/footer.css";

@@ -43,6 +43,7 @@ footer.innerHTML = `
 <p class="footer-direitos cor-9 font-2-s">CubeElement © Alguns direitos reservados.</p>
 </div> <!-- FIM FOOTER CONTAINER -->
 `;
+
 // Ativar Links do LeftModal Sidebar
 const links = document.querySelectorAll(".modalLeft .menu-item .item a");
 
@@ -79,25 +80,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-/*
-// MOSTRAR POP UP AUTOMATIC DEPOIS DE X SEGUNDOS DE PAGINA
-const popup = document.querySelector(".popup");
-const close = document.querySelector(".close");
-
-window.onload = function () {
-  setTimeout(function () {
-    popup.style.display = "block";
-    popup.style.opacity = "1";
-
-    // ADICIONAR ALGUNS SEGUNDOS DE DELAY PRA MOSTRAR O POP UP
-  }, 30000);
-};
-// FECHAR POP UP AO CLICAR NO X
-close.addEventListener("click", () => {
-  popup.style.display = "none";
-});
-*/
-
 // ABRIR MODAL DO HAMBURGER
 function openHamburger() {
   const modalHamburger = document.getElementById("modal-hamburger");
@@ -110,7 +92,6 @@ function openHamburger() {
     }
   });
 }
-
 function openLogin() {
   const modalLogin = document.getElementById("modal-login");
   modalLogin.classList.add("mostrar");
@@ -122,7 +103,7 @@ function openLogin() {
     }
   });
 }
-
+/*
 function openSearch() {
   const modalCenter = document.getElementById("modal-search");
   modalCenter.classList.add("mostrar");
@@ -134,3 +115,4 @@ function openSearch() {
     }
   });
 }
+*/

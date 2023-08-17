@@ -1,0 +1,93 @@
+.login-bg {
+  padding-top: 180px;
+  background-color: var(--cor-0);
+  margin-bottom: auto;
+}
+.login-container {
+  margin: 0 auto;
+  padding: 20px;
+  height: 600px;
+  max-width: 1400px;
+}
+.areatitle-login {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.areatitle-login h1 {
+  margin-bottom: 14px;
+}
+
+.login-conteudo form {
+  margin: 0 auto;
+  width: 442px;
+}
+form .criar-conta {
+  margin-top: 20px;
+  cursor: pointer;
+  margin-left: 220px;
+}
+
+.form-email {
+  margin-bottom: 20px;
+}
+.form-email > label {
+  display: block;
+  font-size: 0.875rem;
+}
+.form-email input {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #3b3b3b;
+  background-color: var(--cor-0);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-senha {
+  position: relative;
+  margin-bottom: 20px;
+  justify-content: left;
+  align-items: center;
+}
+.form-senha > label {
+  display: block;
+  font-size: 0.875rem;
+}
+
+.form-senha > input {
+  width: 400px;
+  display: flex;
+  padding: 20px;
+  border: 1px solid #3b3b3b;
+  background-color: var(--cor-0);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-senha i {
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  cursor: pointer;
+  width: 20px;
+}
+
+.area-cadastrar {
+  margin: 0 auto;
+  text-align: center;
+}
+form button {
+  width: 100%;
+  cursor: pointer;
+  margin-right: auto;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: var(--cor-3);
+}
+
+.area-cadastrar a {
+  margin: 20px auto;
+  cursor: pointer;
+}

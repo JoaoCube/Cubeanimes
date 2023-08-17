@@ -1,0 +1,63 @@
+.cadastrar-bg {
+  padding-top: 80px;
+  height: 800px;
+  background-color: var(--cor-0);
+  margin-bottom: auto;
+}
+.cadastrar-container {
+  margin: 0 auto;
+  padding: 20px;
+  height: 600px;
+  max-width: 1400px;
+}
+.areatitle-cadastrar {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.areatitle-cadastrar h1 {
+  margin-bottom: 14px;
+}
+.cadastrar-conteudo {
+  padding: 20px;
+  border-radius: 4px;
+  width: 400px;
+  margin: 0 auto;
+}
+form .form-cadastrar {
+  width: 100%;
+  position: relative;
+}
+.form-cadastrar label {
+  width: 100%;
+  font-size: 0.8rem;
+}
+.form-cadastrar input {
+  width: 360px;
+  display: block;
+  padding: 20px;
+  border: 1px solid #3b3b3b;
+  background-color: var(--cor-0);
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+form .area-logar {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.area-logar button {
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: var(--cor-3);
+}
+
+.form-cadastrar i {
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}

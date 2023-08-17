@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="icon" type="image/ico" href="./favicon.ico">
-  <title>Login | CubeAnimes</title>
+  <title>Cadastrar | CubeAnimes</title>
 </head>
 
 <body>
@@ -125,33 +125,33 @@
   <header class="header-bg"></header>
 
   <main>
-    <section class="login-bg">
-      <article class="login-container">
-        <div class="areatitle-login cor-7">
-          <h1 class="title-login font-2-xl cor-9">Bem-vindo à Cube Animes</h1>
-          <p class="cor-7">Faça o seu login abaixo :)</p>
+    <section class="cadastrar-bg">
+      <article class="cadastrar-container">
+        <div class="areatitle-cadastrar cor-7">
+          <h1 class="title-cadastrar font-2-xl cor-9">Bem-vindo à Cube Animes</h1>
+          <p class="cor-7">Crie a sua conta abaixo :)</p>
         </div>
 
-        <div class="login-conteudo">
+        <div class="cadastrar-conteudo">
           <form action="#">
-            <div class="form-email cor-8">
+            <div class="form-cadastrar cor-8">
+              <label for="nickname">Nome de Usuario</label>
+              <input type="text" class="cor-9" id="nickname" name="user_nickname" required>
+              <label for="nickname">Nome</label>
+              <input type="text" class="cor-9" id="nome" name="user_nome" required>
+              <label for="nickname">Sobrenome</label>
+              <input type="text" class="cor-9" id="sobrenome" name="user_sobrenome" required>
               <label class="input-label cor-9" for="email">Email:</label>
               <input type="text" class="input-field cor-9" id="email" name="user_login" required>
-            </div>
-            <div class="form-senha cor-8">
               <label class="input-label cor-9" for="email">Senha:</label>
               <input type="password" name="password" id="Password" class="cor-8" required />
               <i class="fa fa-eye" onclick="mouseoverPass();" onmouseout="mouseoutPass();" id="olho" class="olho"></i>
             </div>
 
-            <button class="submit-eye cor-9 font-2-mR" type="submit">Logar</button>
-
-            <div class="area-cadastrar">
-              <a href="#" class="esqueceu-senha">
-                <p class="cor-9">Esqueceu a senha? Clique Aqui</p>
-              </a>
-              <a href="cadastrar.html" class=" criar-conta cor-3">
-                <p>Nao tem conta? Criar agora!</p>
+            <div class="area-logar">
+              <button class="submit-eye cor-9 font-2-mR" type="submit">Cadastrar</button>
+              <a href="login.html" class="cor-3">
+                <p>Ja tem conta? Faça Login!</p>
               </a>
             </div>
 

@@ -143,6 +143,7 @@
 }
 
 .modal-search {
+  display: none;
   position: fixed;
   z-index: 33;
   align-items: center;
@@ -153,6 +154,7 @@
   height: 100%;
 }
 .modalCenter {
+  display: none;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
