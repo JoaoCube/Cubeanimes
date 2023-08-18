@@ -246,10 +246,17 @@
   }
   .slide-logoanime img {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 70px;
+  }
+  .slide-logoanime .logo3 {
+    margin-top: 90px;
+  }
+  .slide-logoanime .logo4 {
+    margin-top: 90px;
   }
   .slide-logoanime .logo5 {
     width: 100%;
+    margin-top: 90px;
     filter: invert();
   }
 }

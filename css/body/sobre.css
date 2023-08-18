@@ -1,10 +1,12 @@
 /*TUDO SOBRE A PAGINA SOBRE*/
 .sobre-bg {
+  overflow: hidden;
   padding-bottom: 100px;
   background-color: var(--cor-2);
 }
 .bannerImagem {
-  height: 500px;
+  width: 120%;
+  height: 550px;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(
     to top,
@@ -14,9 +16,9 @@
 }
 /*CONFIGURA BANNER DO SOBRE*/
 .bannerImagem img {
-  width: 140%;
+  width: 120%;
   filter: grayscale(40%);
-  height: 600px;
+  height: 550px;
   object-fit: cover;
   object-position: center;
 }
@@ -70,12 +72,22 @@
 }
 
 @media (max-width: 1200px) {
+  .sobre-bg {
+    overflow: hidden;
+  }
   .sobre-container {
     margin: 40px;
   }
+  .bannerImagem {
+    width: 120%;
+  }
 }
 @media (max-width: 800px) {
+  .sobre-bg {
+    overflow: hidden;
+  }
   .bannerImagem {
+    width: 120%;
     height: 400px;
   }
   .bannerImagem img {
@@ -87,6 +99,18 @@
   }
 }
 @media (max-width: 440px) {
+  .sobre-bg {
+    padding-bottom: 40px;
+    overflow: hidden;
+    background-color: var(--cor-2);
+  }
+  .bannerImagem {
+    width: 120%;
+    height: 250px;
+  }
+  .bannerImagem img {
+    height: 300px;
+  }
   .accordion {
     font-size: 0.9rem;
   }
