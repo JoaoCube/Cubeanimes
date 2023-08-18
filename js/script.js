@@ -14,7 +14,7 @@ header.innerHTML = `
                 </div>
                 <div class="text-icon">
                     <strong>Sobre</strong>
-                    <p>Saiba sobre a CubeAnimes!</p>
+                    <p>Sobre nós e perguntas frequentes</p>
                 </div>
             </a>
         </li>
@@ -74,7 +74,7 @@ header.innerHTML = `
                 <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i>
                 <li class="menu-conta-item cor-8">
                     <strong class="cor-8">Login</strong>
-                    <p class="cor-7">Faça login na sua conta</p>
+                    <p class="cor-11">Faça login na sua conta</p>
                 </li>
             </div>
         </a>
@@ -84,7 +84,7 @@ header.innerHTML = `
                 <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i>
                 <li class="menu-conta-item cor-8">
                     <strong class="cor-8">Cadastrar</strong>
-                    <p class="cor-7">Crie uma conta agora!</p>
+                    <p class="cor-11">Crie uma conta agora!</p>
                 </li>
             </div>
         </a>

@@ -62,8 +62,8 @@
   font-size: 0.9rem;
 }
 .item a .text-icon > p {
-  font-size: 0.6rem;
-  color: #bbbbbb;
+  font-size: 0.7rem;
+  color: var(--cor-11);
 }
 .modalLeft ul .item a:hover {
   padding: 10px 20px;
