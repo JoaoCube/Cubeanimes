@@ -53,7 +53,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* NUMERO MAX DE LINHAS */
+  -webkit-line-clamp: 5; /* NUMERO MAX DE LINHAS */
   -webkit-box-orient: vertical;
 }
 /*GENEROS DOS ANIMES*/
