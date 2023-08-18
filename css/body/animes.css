@@ -1,6 +1,7 @@
 /*TODAS AS INFORMACOES ABAIXO DAS SEASONS*/
 .infoAnime-bg {
   width: 100%;
+  background-color: var(--cor-0);
 }
 
 .infoAnime-container {
@@ -54,7 +55,11 @@
 
 /* PARTE 2 - SECTION DA SEASON */
 .seasons-bg {
-  margin: 40px 80px 100px 80px;
+  background: linear-gradient(to bottom, var(--cor-0), var(--cor-10));
+  padding-bottom: 100px;
+}
+.seasons-conteudo {
+  margin: 40px 80px 0px 80px;
   max-width: 1800px;
 }
 
@@ -70,7 +75,7 @@
   height: 180px;
   margin-top: 20px;
   flex-wrap: wrap;
-  border: 2px solid transparent;
+  border: 2px solid rgb(32, 34, 41);
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
@@ -134,7 +139,57 @@
     position: relative;
   }
 }
-
+@media (max-width: 1200px) {
+  .infoAnime-bg {
+    width: 100%;
+    overflow: hidden;
+  }
+  .infoAnime-conteudo .bannerCapa {
+    filter: brightness(70%);
+    -webkit-mask-image: linear-gradient(
+      to top,
+      transparent 5%,
+      rgb(14, 14, 14) 100%
+    );
+    height: 450px;
+  }
+  .geral-infoanime {
+    position: absolute;
+    left: 20px;
+    top: 25%;
+  }
+  /*CONFIGURA TITULO NO CARD - H1*/
+  .infoAnime-conteudo .title-anime {
+    max-width: 30ch;
+    font-size: 3rem;
+  }
+  .infoAnime-conteudo .title-anime2 {
+    display: none;
+  }
+  .infoAnime-conteudo .descricao-anime {
+    margin-top: 20px;
+    font-size: 1rem;
+    max-width: 580px;
+  }
+  .geral-infoanime .categorias {
+    display: none;
+  }
+  .seasons-bg {
+    margin: 0px;
+  }
+  .seasons-conteudo {
+    margin: 20px;
+  }
+  .seasons-conteudo h3 {
+    color: #fff;
+  }
+  /*TUDO SOBRE SEASONS*/
+  .seasons {
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    position: relative;
+  }
+}
 @media (max-width: 800px) {
   .infoAnime-bg {
     width: 100%;
@@ -175,10 +230,11 @@
     display: none;
   }
   .seasons-bg {
-    margin: 40px 40px 100px 40px;
+    background: transparent;
+    padding-bottom: 0px;
   }
-  .seasons-conteudo h3 {
-    color: #fff;
+  .seasons-conteudo {
+    margin: 20px;
   }
   /*TUDO SOBRE SEASONS*/
   .seasons {
@@ -204,7 +260,11 @@
     max-width: 480px;
   }
   .seasons-bg {
-    margin: 0px 20px 80px 20px;
+    margin: 0px;
+    padding-bottom: 100px;
+  }
+  .seasons-conteudo {
+    margin: 10px;
   }
   .seasons-conteudo h3 {
     margin-left: 20px;
@@ -229,16 +289,17 @@
     max-width: 400px;
   }
   .seasons-bg {
-    margin: 100px 20px;
+    margin: 0px;
   }
   .seasons-conteudo h3 {
     margin-left: 20px;
+    margin-top: 40px;
   }
   /*TUDO SOBRE SEASONS*/
   .seasons {
     grid-template-columns: repeat(2, auto);
     gap: 20px;
     position: relative;
-    margin: 20px;
+    margin: 0px 20px;
   }
 }

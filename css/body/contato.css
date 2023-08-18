@@ -33,3 +33,9 @@
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 800px) {
+  .contato-bg {
+    height: 570px;
+  }
+}

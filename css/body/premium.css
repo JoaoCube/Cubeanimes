@@ -47,13 +47,17 @@
 
 @media (max-width: 800px) {
   .premium-bg {
-    margin-top: 100px;
+    margin-top: 20px;
   }
   .premium-conteudo {
     width: auto;
     height: auto;
     margin: 0px 40px;
     padding: 20px 30px;
+  }
+  .premium-conteudo .premium-texts {
+    padding: 20px;
+    text-align: center;
   }
   .premium-btn {
     font-size: 1rem;
@@ -62,13 +66,17 @@
 }
 @media (max-width: 440px) {
   .premium-bg {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .premium-conteudo {
     width: auto;
     height: 100%;
     margin: 0px 20px;
     padding: 20px;
+  }
+  .premium-conteudo .premium-texts {
+    padding: 20px;
+    text-align: center;
   }
   .premium-btn {
     margin-top: 20px;
