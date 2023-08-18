@@ -21,7 +21,12 @@ header.sticky {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-right: 45px;
+  color: var(--cor-8);
+  font-size: 0.8rem;
+}
+.leftmenu p {
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 /* LOGO DO SITE */
@@ -60,16 +65,23 @@ header.sticky {
     background: rgba(0, 0, 0, 0.5);
   }
   .header .leftmenu {
-    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
   }
+
   .header .logo {
     scale: 0.8;
   }
   .header {
-    padding: 5px 20px;
+    padding: 10px 20px;
   }
-  /* LOGOMARCA */
-  .header a {
-    font-size: 0.8rem;
+  .header .leftmenu {
+    color: var(--cor-8);
+  }
+  .rightmenu {
+    gap: 20px;
+    color: var(--cor-8);
   }
 }

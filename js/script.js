@@ -105,6 +105,7 @@ header.innerHTML = `
 <div class="header">
 <div class="leftmenu" onclick="openHamburger()">
 <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+<p>NAVEGAR</p>
 </div>
 
 <a href="./index.html">
