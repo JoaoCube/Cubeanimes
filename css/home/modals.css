@@ -1,6 +1,6 @@
 .modal-hamburger {
   position: fixed;
-  z-index: 33;
+  z-index: -10;
   align-items: center;
   justify-content: center;
   display: none;
@@ -11,16 +11,17 @@
 
 .modalLeft {
   position: absolute;
-  left: -0px;
+  left: 0px;
   width: 250px;
   height: 100%;
-  background-color: var(--cor-10);
   padding: 0px 10px;
   animation: animate-modal-left 0.3s;
 }
 
 .modalLeft ul {
-  margin-top: 80px;
+  margin-top: 50px;
+  border-radius: 4px;
+  background-color: var(--cor-10);
   animation: animate-modal-left 0.5s;
 }
 /* CADA ITEM DA LI */
@@ -34,7 +35,7 @@
   transition: 0.2s ease-in-out;
 }
 .modalLeft ul .item a.ativo {
-  background-color: var(--cor-0);
+  background-color: var(--cor-00);
   border-radius: 4px;
 }
 /* DIV DA AREA ICON */
@@ -47,6 +48,7 @@
   align-items: center;
   justify-content: center;
 }
+
 /* DIV DA AREA DE TEXTO */
 .item a .text-icon {
   padding-left: 10px;
@@ -56,8 +58,7 @@
 }
 .modalLeft ul .item a:hover {
   padding: 10px 20px;
-  background-color: #000000;
-  border-radius: 4px;
+  background-color: var(--cor-00);
 }
 
 @keyframes animate-modal-left {

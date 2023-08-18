@@ -25,7 +25,6 @@
   height: 100vh;
   object-fit: cover;
   object-position: top;
-  filter: brightness(80%);
   -webkit-mask-image: linear-gradient(
     to top,
     transparent 10%,

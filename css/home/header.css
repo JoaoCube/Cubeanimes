@@ -3,7 +3,7 @@
   position: fixed;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 100;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .header {
   display: flex;
@@ -13,20 +13,20 @@
 }
 header.sticky {
   background: rgba(0, 0, 0, 0.8);
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 /* NAV SIDEBAR */
 .header .leftmenu {
-  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   margin-right: 45px;
 }
+
 /* LOGO DO SITE */
 .header .logo {
-  width: 32px;
+  width: 26px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,18 +36,21 @@ header.sticky {
 /* NAVIGATION GERAL */
 .rightmenu {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   gap: 20px;
+  color: var(--cor-8);
 }
 .rightmenu .search {
   cursor: pointer;
 }
 .rightmenu #login {
   cursor: pointer;
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--cor-8);
 }
 
 /* RESPONSIVIDADE MOBILE*/

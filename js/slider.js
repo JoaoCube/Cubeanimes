@@ -40,7 +40,6 @@ function nextSlide() {
   currentIndex = (currentIndex + 1) % slides.length;
   showImage(currentIndex);
 }
-
 function prevSlide() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   showImage(currentIndex);
