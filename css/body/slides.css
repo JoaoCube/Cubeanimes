@@ -46,6 +46,16 @@
 .slide-logoanime img {
   width: 100%;
 }
+.slide-logoanime .logo3,
+.logo4 {
+  margin-top: 50px;
+  width: 100%;
+}
+.slide-logoanime .logo5 {
+  margin-top: 50px;
+  width: 100%;
+  filter: invert();
+}
 /*CONFIGURA - SINOPSE*/
 .slide-info .sinopse {
   margin-top: 20px;
