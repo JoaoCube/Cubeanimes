@@ -115,7 +115,7 @@ header.innerHTML = `
 <nav aria-label="primaria">
     <div class="rightmenu">
         <div class="search" onclick="openSearch()">
-        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
         </div>
         <div id="login" onclick="openLogin()"></div>
     </div>
