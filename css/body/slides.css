@@ -125,6 +125,10 @@
   .slide-logoanime img {
     width: 100%;
   }
+  .slide-logoanime .logo5 {
+    width: 100%;
+    filter: invert();
+  }
 }
 @media (max-width: 800px) {
   .slider-bg {
@@ -171,5 +175,9 @@
   .slide-logoanime img {
     width: 100%;
     margin-top: 50px;
+  }
+  .slide-logoanime .logo5 {
+    width: 100%;
+    filter: invert();
   }
 }
