@@ -74,11 +74,6 @@
     margin: 40px;
   }
 }
-@media (max-width: 1024px) {
-  .sobre-container {
-    margin: 50px;
-  }
-}
 @media (max-width: 800px) {
   .bannerImagem {
     height: 400px;
@@ -88,11 +83,11 @@
     height: 400px;
   }
   .sobre-container {
-    margin: 50px;
+    margin: 10px;
   }
 }
 @media (max-width: 440px) {
   .accordion {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }

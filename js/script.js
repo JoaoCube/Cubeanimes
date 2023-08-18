@@ -211,16 +211,3 @@ function openLogin() {
     }
   });
 }
-/*
-function openSearch() {
-  const modalCenter = document.getElementById("modal-search");
-  modalCenter.classList.add("mostrar");
-
-  modalCenter.addEventListener("click", (e) => {
-    if (e.target.id == "modal-search" || e.target.id == "fechar") {
-      modalCenter.classList.remove("mostrar");
-      localStorage.fechaModal = "modal-search";
-    }
-  });
-}
-*/
