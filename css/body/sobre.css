@@ -90,4 +90,7 @@
   .accordion {
     font-size: 0.9rem;
   }
+  .sobre-container {
+    margin: 10px;
+  }
 }
