@@ -1,6 +1,6 @@
 .modal-hamburger {
   position: fixed;
-  z-index: -10;
+  z-index: -1;
   align-items: center;
   justify-content: center;
   display: none;
@@ -12,22 +12,28 @@
 .modalLeft {
   position: absolute;
   left: 0px;
-  width: 250px;
-  height: 100%;
+  top: 50px;
+  width: 340px;
   padding: 0px 10px;
   animation: animate-modal-left 0.3s;
 }
 
 .modalLeft ul {
-  margin-top: 50px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 8px;
   background-color: var(--cor-10);
   animation: animate-modal-left 0.5s;
 }
+.modalLeft ul .item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px 0px;
+}
 /* CADA ITEM DA LI */
 .modalLeft ul .item a {
-  margin: 10px 0px;
   padding: 10px;
+  width: 100%;
   display: flex;
   background-color: transparent;
   justify-content: left;
@@ -35,15 +41,16 @@
   transition: 0.2s ease-in-out;
 }
 .modalLeft ul .item a.ativo {
+  width: 100%;
   background-color: var(--cor-00);
-  border-radius: 4px;
+  border-radius: 8px;
 }
 /* DIV DA AREA ICON */
 .item a .item-icon {
   width: 16px;
-  background-color: var(--cor-1);
+  background-color: var(--cor-00);
   padding: 15px;
-  border-radius: 6px;
+  border-radius: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,13 +58,17 @@
 
 /* DIV DA AREA DE TEXTO */
 .item a .text-icon {
-  padding-left: 10px;
+  margin-left: 20px;
+  font-size: 0.9rem;
 }
 .item a .text-icon > p {
   font-size: 0.6rem;
+  color: #bbbbbb;
 }
 .modalLeft ul .item a:hover {
   padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
   background-color: var(--cor-00);
 }
 

@@ -6,17 +6,7 @@ header.innerHTML = `
 <div id="modal-hamburger" class="modal-hamburger">
 <div class="modalLeft">
     <ul class="menu-item">
-        <li class="item">
-            <a href="./index.html">
-                <div class="item-icon">
-                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                </div>
-                <div class="text-icon">
-                    <strong class="cor-9">Inicio</strong>
-                    <p class="cor-7">Voltar ao inicio do site.</p>
-                </div>
-            </a>
-        </li>
+
         <li class="item">
             <a href="./sobre.html">
                 <div class="item-icon">
@@ -35,7 +25,7 @@ header.innerHTML = `
                 </div>
                 <div class="text-icon">
                     <strong>Animes</strong>
-                    <p>Veja todo nosso catalogo.</p>
+                    <p>Confira todo nosso catálogo</p>
                 </div>
             </a>
         </li>
@@ -46,7 +36,7 @@ header.innerHTML = `
                 </div>
                 <div class="text-icon">
                     <strong>Calendário</strong>
-                    <p>Data de cada episodio.</p>
+                    <p>Animes em exibição</p>
                 </div>
             </a>
         </li>
@@ -57,7 +47,7 @@ header.innerHTML = `
                 </div>
                 <div class="text-icon">
                     <strong>Cube Pass</strong>
-                    <p>Tenha acesso a tudo.</p>
+                    <p>Quer ter acesso a todo nosso site?</p>
                 </div>
             </a>
         </li>
@@ -68,7 +58,7 @@ header.innerHTML = `
                 </div> <!-- FIM ITEM ICON -->
                 <div class="text-icon">
                     <strong>Contato</strong>
-                    <p>Fale conosco no chat.</p>
+                    <p>Precisando de ajuda?</p>
                 </div>
             </a>
         </li>
