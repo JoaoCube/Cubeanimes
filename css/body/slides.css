@@ -71,9 +71,8 @@
   width: 100%;
 }
 .slide-logoanime .logo5 {
-  margin-top: 50px;
+  margin-top: 90px;
   width: 100%;
-  filter: invert();
 }
 /*CONFIGURA - SINOPSE*/
 .slide-info .sinopse {
@@ -146,7 +145,7 @@
   }
   .slide-logoanime .logo5 {
     width: 100%;
-    filter: invert();
+    margin-top: 90px;
   }
 }
 @media (max-width: 1200px) {
@@ -195,7 +194,7 @@
   }
   .slide-logoanime .logo5 {
     width: 100%;
-    filter: invert();
+    margin-top: 90px;
   }
 }
 @media (max-width: 800px) {
@@ -255,7 +254,6 @@
   }
   .slide-logoanime .logo5 {
     width: 100%;
-    margin-top: 80px;
-    filter: invert();
+    margin-top: 110px;
   }
 }
