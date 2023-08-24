@@ -109,7 +109,7 @@ header.innerHTML = `
 </div>
 
 <a href="./index.html">
-    <img src="https://seeklogo.com/images/M/mouz-logo-F58A94DA2F-seeklogo.com.png" class="logo cor-9" alt="">
+    <img src="./publics/imgs/logo.png" class="logo cor-9" alt="">
 </a>
 
 <nav aria-label="primaria">
@@ -143,6 +143,14 @@ footer.innerHTML = `
 </div> <!-- FIM FOOTER CONTAINER -->
 `;
 
+//BACKGROUND NO NAV AO ROLAR O SCROLL DO MOUSE PRA BAIXO
+let nav = document.querySelector("header");
+window.onscroll = () => {
+  this.scrollY > 18
+    ? nav.classList.add("sticky")
+    : nav.classList.remove("sticky");
+};
+
 // Ativar Links do LeftModal Sidebar
 const links = document.querySelectorAll(".modalLeft .menu-item .item a");
 
@@ -154,14 +162,6 @@ function ativarLink(link) {
   }
 }
 links.forEach(ativarLink);
-
-//BACKGROUND NO NAV AO ROLAR O SCROLL DO MOUSE PRA BAIXO
-let nav = document.querySelector("header");
-window.onscroll = () => {
-  this.scrollY > 18
-    ? nav.classList.add("sticky")
-    : nav.classList.remove("sticky");
-};
 
 // Perguntas Frequentes
 let acc = document.getElementsByClassName("accordion");

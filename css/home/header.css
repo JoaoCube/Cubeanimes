@@ -31,7 +31,7 @@ header.sticky {
 
 /* LOGO DO SITE */
 .header .logo {
-  width: 26px;
+  width: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@ header.sticky {
   }
 
   .header .logo {
-    scale: 0.8;
+    scale: 1;
   }
   .header {
     padding: 10px 20px;
