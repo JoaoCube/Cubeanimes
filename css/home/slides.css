@@ -26,13 +26,10 @@
     transform: translateY(0);
   }
 }
-/* CADA SLIDE-ITEM */
+/* AREA DA IMAGEM BACKGROUND */
 .slide {
   position: relative;
   height: 100vh;
-}
-/* AREA DA IMAGEM BACKGROUND */
-.slide {
   width: 100%;
   background-color: var(--cor-10);
   -webkit-mask-image: linear-gradient(
@@ -213,7 +210,7 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
-    object-position: center;
+    object-position: right;
   }
   /* AREA DE INFO DO SLIDE, CATEGORIAS E TUDO */
   .slide .slide-info {
