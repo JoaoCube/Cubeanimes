@@ -239,7 +239,7 @@
   /*TUDO SOBRE SEASONS*/
   .seasons {
     grid-template-columns: repeat(3, auto);
-    gap: 20px;
+    gap: 10px;
     position: relative;
   }
   /*CARDS SOBRE AS TEMPORADAS*/
@@ -272,9 +272,9 @@
   /*TUDO SOBRE SEASONS*/
   .seasons {
     grid-template-columns: repeat(2, auto);
-    gap: 20px;
+    gap: 10px;
     position: relative;
-    margin: 20px;
+    margin: 10px;
   }
 }
 @media (max-width: 500px) {
@@ -295,11 +295,29 @@
     margin-left: 20px;
     margin-top: 40px;
   }
+}
+@media (max-width: 400px) {
+  .infoAnime-conteudo {
+    height: auto;
+  }
+  .infoAnime-conteudo .descricao-anime {
+    max-width: 300px;
+    height: auto;
+    line-height: 1.3;
+    font-size: 0.8rem;
+  }
+  .seasons-bg {
+    margin: 0px;
+  }
+  .seasons-conteudo h3 {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
   /*TUDO SOBRE SEASONS*/
-  .seasons {
-    grid-template-columns: repeat(2, auto);
-    gap: 20px;
-    position: relative;
-    margin: 0px 20px;
+  .season {
+    height: 110px;
+  }
+  .season .areatext-season {
+    top: 50px;
   }
 }

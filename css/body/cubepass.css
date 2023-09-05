@@ -175,3 +175,31 @@
     width: 300px;
   }
 }
+@media (max-width: 400px) {
+  .pass-container .areatitle-pass {
+    max-width: 300px;
+  }
+  .pass-conteudo .item-pass {
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+  }
+  .item-pass .price-pass {
+    font-size: 1.1rem;
+  }
+  .areabtn-pass input {
+    padding: 20px;
+  }
+
+  .pay-container .areatitle-pay {
+    max-width: 300px;
+  }
+  .areatitle-pay .title-pay {
+    font-size: 1.1rem;
+  }
+  .pay-conteudo ul .item-pay {
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+  }
+}

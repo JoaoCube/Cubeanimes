@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
   width: 5px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--cor-8);
+  background-color: var(--cor-3);
 }
 
 body::-webkit-scrollbar-track {
