@@ -146,7 +146,7 @@ footer.innerHTML = `
 //BACKGROUND NO NAV AO ROLAR O SCROLL DO MOUSE PRA BAIXO
 let nav = document.querySelector("header");
 window.onscroll = () => {
-  this.scrollY > 18
+  this.scrollY > 40
     ? nav.classList.add("sticky")
     : nav.classList.remove("sticky");
 };
