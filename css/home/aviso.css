@@ -33,10 +33,7 @@
   }
 }
 @media (max-width: 800px) {
-  .aviso-container {
-    margin: 0px 20px;
-  }
-  .aviso-conteudo p {
-    font-size: 0.8rem;
+  .aviso-bg {
+    display: none;
   }
 }

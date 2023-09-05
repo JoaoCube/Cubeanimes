@@ -55,6 +55,9 @@
   align-items: center;
   justify-content: center;
 }
+.item-icon img {
+  filter: invert();
+}
 
 /* DIV DA AREA DE TEXTO */
 .item a .text-icon {
@@ -129,10 +132,11 @@
 }
 .menu-conta .btn-conta {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   width: auto;
   height: auto;
+  gap: 15px;
   padding: 20px;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -140,9 +144,9 @@
 .menu-conta .btn-conta:hover {
   background-color: var(--cor-1);
 }
-.menu-conta .btn-conta i {
-  margin-right: 15px;
+.menu-conta .btn-conta img {
   scale: 1.2;
+  filter: invert();
 }
 .menu-conta-item {
   font-size: 0.7rem;

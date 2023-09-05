@@ -15,6 +15,9 @@
   gap: 12px;
   margin-bottom: 16px;
 }
+.footer-redes img {
+  filter: invert();
+}
 
 .footer-container .footer-direitos {
   text-align: center;

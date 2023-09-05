@@ -10,7 +10,7 @@ header.innerHTML = `
         <li class="item">
             <a href="./sobre.html">
                 <div class="item-icon">
-                    <i class="fa-solid fa-list-check" style="color: #ffffff;"></i>
+                <img src="./publics/icons/list.svg" alt="sobre" width="20px" height="20px">
                 </div>
                 <div class="text-icon">
                     <strong>Sobre</strong>
@@ -21,7 +21,7 @@ header.innerHTML = `
         <li class="item">
             <a href="./onepiece.html">
                 <div class="item-icon">
-                    <i class="fa-solid fa-book" style="color: #ffffff;"></i>
+                <img src="./publics/icons/book.svg" alt="animes" width="20px" height="20px">
                 </div>
                 <div class="text-icon">
                     <strong>Animes</strong>
@@ -32,7 +32,7 @@ header.innerHTML = `
         <li class="item">
             <a href="#">
                 <div class="item-icon">
-                    <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>
+                <img src="./publics/icons/calendar.svg" alt="calendario" width="20px" height="20px">
                 </div>
                 <div class="text-icon">
                     <strong>Calendário</strong>
@@ -43,7 +43,7 @@ header.innerHTML = `
         <li class="item">
             <a href="Cubepass.html">
                 <div class="item-icon">
-                    <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                <img src="./publics/icons/star.svg" alt="passe" width="20px" height="20px">
                 </div>
                 <div class="text-icon">
                     <strong>Cube Pass</strong>
@@ -54,7 +54,7 @@ header.innerHTML = `
         <li class="item">
             <a href="contato.html">
                 <div class="item-icon">
-                    <i class="fa-solid fa-comment" style="color: #ffffff;"></i>
+                <img src="./publics/icons/chat.svg" alt="chat" width="20px" height="20px">
                 </div> <!-- FIM ITEM ICON -->
                 <div class="text-icon">
                     <strong>Contato</strong>
@@ -71,7 +71,7 @@ header.innerHTML = `
     <ul class="menu-conta">
         <a href="login.html">
             <div class="btn-conta">
-                <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i>
+            <img src="./publics/icons/login.svg" alt="login" width="20px" height="20px">
                 <li class="menu-conta-item cor-8">
                     <strong class="cor-8">Login</strong>
                     <p class="cor-11">Faça login na sua conta</p>
@@ -81,7 +81,7 @@ header.innerHTML = `
 
         <a href="cadastrar.html">
             <div class="btn-conta cadastro">
-                <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i>
+            <img src="./publics/icons/login.svg" alt="cadastrar" width="20px" height="20px">
                 <li class="menu-conta-item cor-8">
                     <strong class="cor-8">Cadastrar</strong>
                     <p class="cor-11">Crie uma conta agora!</p>
@@ -91,31 +91,21 @@ header.innerHTML = `
     </ul>
 </div>
 </div>
-<div id="modal-search" class="modal-search">
-<div class="modalCenter">
-    <label for="Pesquisar">
-        <input type="text" class="txtBusca cor-7" placeholder="Pesquisar Anime..." />
-        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;" id="btnBusca" alt="Buscar"></i>
-    </label>
-
-
-</div>
-</div>
 
 <div class="header">
 <div class="leftmenu" onclick="openHamburger()">
-<i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+<img src="./publics/icons/hamburger.svg" alt="barras" width="20px" height="20px">
 <p>NAVEGAR</p>
 </div>
 
 <a href="./index.html">
-    <img src="./publics/imgs/logo.png" class="logo cor-9" alt="">
+    <img src="./publics/imgs/logo.png" alt="logo" width="32px" height="32px">
 </a>
 
 <nav aria-label="primaria">
     <div class="rightmenu">
         <div class="search" onclick="openSearch()">
-        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+        <img src="./publics/icons/search.svg" alt="search" width="20px" height="20px">
         </div>
         <div id="login" onclick="openLogin()"></div>
     </div>
@@ -125,16 +115,13 @@ header.innerHTML = `
 footer.innerHTML = `
 <div class="footer-container">
 <div class="footer-redes">
-    <a href="#">
-        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-    </a>
 
-    <a href="https://www.instagram.com/_joaocube/">
-        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+    <a href="https://www.linkedin.com/in/joao-batista-631120276/">
+    <img src="./publics/icons/linkedin.svg" alt="linkedin" width="20px" height="20px">
     </a>
 
     <a href="https://github.com/JoaoCube">
-        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+    <img src="./publics/icons/github.svg" alt="github" width="20px" height="20px">
     </a>
 
 </div>
@@ -146,7 +133,7 @@ footer.innerHTML = `
 //BACKGROUND NO NAV AO ROLAR O SCROLL DO MOUSE PRA BAIXO
 let nav = document.querySelector("header");
 window.onscroll = () => {
-  this.scrollY > 40
+  this.scrollY > 80
     ? nav.classList.add("sticky")
     : nav.classList.remove("sticky");
 };

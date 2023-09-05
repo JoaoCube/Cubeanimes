@@ -1,19 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap");
-
+/* GLOBAL, TEM EM TODAS PAGINAS */
 @import "../global/global.css";
 @import "../utilitarios.css/cores.css";
 @import "../utilitarios.css/tipografia.css";
-@import "../home/header.css";
-@import "../body/slides.css";
-@import "../home/cubepass.css";
+@import "../global/header.css";
+@import "../global/footer.css";
+
+/* QUE TEM NO INICIO DO SITE */
+@import "../home/slides.css";
 @import "../home/popup.css";
 @import "../home/modals.css";
-@import "../body/sobre.css";
 @import "../home/aviso.css";
-@import "../body/cardsH.css";
-@import "../body/cardsV.css";
+@import "../home/cardsH.css";
+@import "../home/cardsV.css";
+@import "../home/premium.css";
+
+/* OUTRAS PAGINAS */
+@import "../body/cubepass.css";
+@import "../body/sobre.css";
 @import "../body/animes.css";
-@import "../body/premium.css";
-@import "../home/login.css";
+@import "../body/login.css";
 @import "../body/contato.css";
-@import "../home/footer.css";

@@ -28,10 +28,12 @@ header.sticky {
   margin-top: 11px;
   margin-left: 5px;
 }
+.header .leftmenu img {
+  filter: invert();
+}
 
 /* LOGO DO SITE */
 .header .logo {
-  width: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,6 +51,10 @@ header.sticky {
 }
 .rightmenu .search {
   cursor: pointer;
+  margin-top: 6px;
+}
+.search img {
+  filter: invert();
 }
 .rightmenu #login {
   cursor: pointer;
