@@ -1,29 +1,10 @@
-/*TUDO SOBRE A PAGINA SOBRE*/
-.sobre-bg {
-  overflow: hidden;
-  padding-bottom: 100px;
-  background-color: var(--cor-2);
-}
-.bannerImagem {
-  width: 100%;
-  height: 550px;
-  overflow: hidden;
-  background-color: var(--cor-3);
-  -webkit-mask-image: linear-gradient(
-    to top,
-    transparent 1%,
-    rgb(27, 27, 27) 90%
-  );
-}
-
 /*CONFIGURA CONTAINER DO SOBRE*/
 .sobre-container {
-  margin: 60px auto;
+  margin: 0 auto;
   max-width: 1400px;
-  padding: 20px;
-  /* background-color: var(--cor-3); */
+  padding: 100px 20px;
 }
-.sobre-container h2 {
+.sobre-container h1 {
   margin-bottom: 20px;
 }
 .accordion {
@@ -65,49 +46,20 @@
 }
 
 @media (max-width: 1200px) {
-  .sobre-bg {
-    overflow: hidden;
-  }
   .sobre-container {
     margin: 40px;
   }
-  .bannerImagem {
-    width: 120%;
-  }
 }
 @media (max-width: 800px) {
-  .sobre-bg {
-    overflow: hidden;
-  }
-  .bannerImagem {
-    width: 120%;
-    height: 400px;
-  }
-  .bannerImagem img {
-    width: 140%;
-    height: 400px;
-  }
   .sobre-container {
     margin: 10px;
   }
 }
 @media (max-width: 440px) {
-  .sobre-bg {
-    padding-bottom: 40px;
-    overflow: hidden;
-    background-color: var(--cor-2);
-  }
-  .bannerImagem {
-    width: 120%;
-    height: 250px;
-  }
-  .bannerImagem img {
-    height: 300px;
-  }
   .accordion {
     font-size: 0.9rem;
   }
   .sobre-container {
-    margin: 10px;
+    margin: 0px;
   }
 }

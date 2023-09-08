@@ -8,13 +8,13 @@ header.innerHTML = `
     <ul class="menu-item">
 
         <li class="item">
-            <a href="./sobre.html">
+            <a href="./index.html">
                 <div class="item-icon">
-                <img src="./publics/icons/list.svg" alt="sobre" width="20px" height="20px">
+                <img src="./publics/icons/home.svg" alt="sobre" width="20px" height="20px">
                 </div>
                 <div class="text-icon">
-                    <strong>Sobre</strong>
-                    <p>Sobre nós e perguntas frequentes</p>
+                    <strong>Inicio</strong>
+                    <p>Voltar ao Inicio</p>
                 </div>
             </a>
         </li>
